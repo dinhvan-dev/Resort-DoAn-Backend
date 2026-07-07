@@ -1,0 +1,2 @@
+ALTER TABLE rooms
+    ADD COLUMN imageUrl VARCHAR(1024) NULL;

@@ -1,0 +1,256 @@
+2026-07-05 21:03:53 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-05 21:03:53 [main] INFO  c.e.resort.ResortApplicationTests - Starting ResortApplicationTests using Java 21.0.10 with PID 14672 (started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-05 21:03:53 [main] DEBUG c.e.resort.ResortApplicationTests - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-05 21:03:53 [main] INFO  c.e.resort.ResortApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2026-07-05 21:03:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-05 21:03:54 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 86 ms. Found 8 JPA repository interfaces.
+2026-07-05 21:03:55 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-05 21:03:56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2a531637
+2026-07-05 21:03:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-05 21:03:56 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-05 21:03:56 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 8
+2026-07-05 21:03:56 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-05 21:03:56 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-05 21:03:56 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-05 21:03:56 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-05 21:03:57 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-05 21:03:58 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-05 21:03:58 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-05 21:03:59 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-05 21:04:02 [main] INFO  c.e.resort.ResortApplicationTests - Started ResortApplicationTests in 9.865 seconds (process running for 11.083)
+2026-07-05 21:04:03 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-05 21:04:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-05 21:04:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-05 21:07:48 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-05 21:07:48 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 20256 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-05 21:07:48 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-05 21:07:48 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-05 21:07:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-05 21:07:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 142 ms. Found 8 JPA repository interfaces.
+2026-07-05 21:07:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-05 21:07:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-05 21:07:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-05 21:07:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-05 21:07:51 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-05 21:07:51 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3163 ms
+2026-07-05 21:07:51 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-05 21:07:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-05 21:07:52 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5cb8580
+2026-07-05 21:07:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-05 21:07:52 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-05 21:07:52 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 8
+2026-07-05 21:07:52 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-05 21:07:52 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-05 21:07:52 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-05 21:07:52 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-05 21:07:53 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-05 21:07:54 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-05 21:07:54 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-05 21:07:54 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-05 21:07:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-05 21:07:57 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-05 21:07:57 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 11.282 seconds (process running for 12.071)
+2026-07-05 21:08:14 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-05 21:08:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-05 21:08:14 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-07-05 21:08:21 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-05 21:08:21 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-05 21:08:21 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 21:25:36 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-05 21:25:36 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 1416 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-05 21:25:36 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-05 21:25:36 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-05 21:25:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-05 21:25:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 8 JPA repository interfaces.
+2026-07-05 21:25:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-05 21:25:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-05 21:25:38 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-05 21:25:38 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-05 21:25:38 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-05 21:25:38 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2341 ms
+2026-07-05 21:25:38 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-05 21:25:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-05 21:25:39 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45ad3cd8
+2026-07-05 21:25:39 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-05 21:25:39 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-05 21:25:39 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 8
+2026-07-05 21:25:39 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-05 21:25:39 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-05 21:25:39 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-05 21:25:39 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-05 21:25:40 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-05 21:25:41 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-05 21:25:41 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-05 21:25:41 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-05 21:25:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-05 21:25:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-05 21:25:44 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 8.43 seconds (process running for 9.52)
+2026-07-05 21:43:51 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-05 21:43:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-05 21:43:51 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-05 22:18:11 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-05 22:18:11 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-05 22:18:11 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 22:18:24 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-05 22:18:24 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-05 22:18:24 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 22:20:20 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-05 22:20:20 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-05 22:20:20 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 22:23:03 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-05 22:23:03 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-05 22:23:03 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 22:32:09 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-05 22:32:09 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-05 22:32:10 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 22:32:26 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Refresh token rotated for user admin
+2026-07-05 22:36:40 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan01
+2026-07-05 22:36:40 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - User found: dinhvan01, checking password...
+2026-07-05 22:36:40 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 22:41:57 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-05 22:41:57 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-05 22:41:57 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 22:42:06 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-05 22:42:06 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-05 22:42:06 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 22:42:12 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan04
+2026-07-05 22:42:12 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - User found: dinhvan04, checking password...
+2026-07-05 22:42:12 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - Password match result: false
+2026-07-05 22:42:12 [http-nio-8080-exec-5] ERROR c.e.r.service.AuthenticationService - Password mismatch for user: dinhvan04
+2026-07-05 22:42:22 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Login attempt for username: usercodex01
+2026-07-05 22:42:22 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - User found: usercodex01, checking password...
+2026-07-05 22:42:23 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 22:42:32 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Login attempt for username: usercodex01
+2026-07-05 22:42:32 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - User found: usercodex01, checking password...
+2026-07-05 22:42:32 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 22:45:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-05 22:45:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-05 22:45:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-05 22:45:46 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-05 22:45:46 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 19460 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-05 22:45:46 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-05 22:45:46 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-05 22:45:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-05 22:45:47 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 8 JPA repository interfaces.
+2026-07-05 22:45:47 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-05 22:45:47 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-05 22:45:47 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-05 22:45:47 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-05 22:45:48 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-05 22:45:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1639 ms
+2026-07-05 22:45:48 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-05 22:45:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-05 22:45:48 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b8cb283
+2026-07-05 22:45:48 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-05 22:45:48 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-05 22:45:48 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 8
+2026-07-05 22:45:48 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-05 22:45:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-05 22:45:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-05 22:45:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-05 22:45:49 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-05 22:45:49 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-05 22:45:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-05 22:45:50 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-05 22:45:52 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-05 22:45:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-05 22:45:52 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 6.632 seconds (process running for 7.273)
+2026-07-05 22:46:40 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-05 22:46:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-05 22:46:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-07-05 22:46:40 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan01
+2026-07-05 22:46:40 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - User found: dinhvan01, checking password...
+2026-07-05 22:46:40 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 23:23:07 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m17s828ms805µs600ns).
+2026-07-05 23:28:24 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-05 23:28:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-05 23:28:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-05 23:28:30 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-05 23:28:30 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 1260 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-05 23:28:30 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-05 23:28:30 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-05 23:28:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-05 23:28:31 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 48 ms. Found 8 JPA repository interfaces.
+2026-07-05 23:28:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-05 23:28:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-05 23:28:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-05 23:28:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-05 23:28:32 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-05 23:28:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1554 ms
+2026-07-05 23:28:32 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-05 23:28:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-05 23:28:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d8f2cfd
+2026-07-05 23:28:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-05 23:28:32 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-05 23:28:32 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 8
+2026-07-05 23:28:32 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-05 23:28:33 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-05 23:28:33 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-05 23:28:33 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-05 23:28:33 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-05 23:28:34 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-05 23:28:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-05 23:28:34 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-05 23:28:37 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-05 23:28:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-05 23:28:37 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 7.655 seconds (process running for 8.221)
+2026-07-05 23:28:38 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-05 23:28:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-05 23:28:38 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-07-05 23:29:24 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan01
+2026-07-05 23:29:24 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - User found: dinhvan01, checking password...
+2026-07-05 23:29:24 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 23:30:16 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - anonymous - CREATE - Booking - N/A - FAILED
+2026-07-05 23:30:18 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - anonymous - CREATE - Booking - N/A - FAILED
+2026-07-05 23:30:52 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - anonymous - CREATE - Booking - 2 - SUCCESS
+2026-07-05 23:36:35 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan01
+2026-07-05 23:36:35 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - User found: dinhvan01, checking password...
+2026-07-05 23:36:35 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 23:36:46 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - anonymous - CREATE - Booking - N/A - FAILED
+2026-07-05 23:37:16 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - anonymous - CREATE - Booking - N/A - FAILED
+2026-07-05 23:37:36 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - anonymous - CREATE - Booking - 3 - SUCCESS
+2026-07-05 23:45:38 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-05 23:45:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-05 23:45:38 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-05 23:45:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-05 23:45:44 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 1504 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-05 23:45:44 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-05 23:45:44 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-05 23:45:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-05 23:45:45 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 8 JPA repository interfaces.
+2026-07-05 23:45:46 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-05 23:45:46 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-05 23:45:46 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-05 23:45:46 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-05 23:45:46 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-05 23:45:46 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1543 ms
+2026-07-05 23:45:46 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-05 23:45:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-05 23:45:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b98355f
+2026-07-05 23:45:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-05 23:45:46 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-05 23:45:46 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 8
+2026-07-05 23:45:46 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-05 23:45:46 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-05 23:45:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-05 23:45:46 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-05 23:45:47 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-05 23:45:47 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-05 23:45:48 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-05 23:45:48 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-05 23:45:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-05 23:45:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-05 23:45:50 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 6.378 seconds (process running for 6.878)
+2026-07-05 23:46:10 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-05 23:46:10 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-05 23:46:10 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-07-05 23:46:51 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan02
+2026-07-05 23:46:51 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - User found: dinhvan02, checking password...
+2026-07-05 23:46:51 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 23:51:59 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan01
+2026-07-05 23:51:59 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - User found: dinhvan01, checking password...
+2026-07-05 23:51:59 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-05 23:52:11 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - anonymous - CREATE - Booking - 4 - SUCCESS
+2026-07-05 23:53:27 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan01
+2026-07-05 23:53:27 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - User found: dinhvan01, checking password...
+2026-07-05 23:53:27 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Password match result: true

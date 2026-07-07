@@ -1,0 +1,81 @@
+2026-07-07 13:48:33 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-07 13:48:33 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 11036 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-07 13:48:33 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-07 13:48:33 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 13:48:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 13:48:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 49 ms. Found 8 JPA repository interfaces.
+2026-07-07 13:48:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 13:48:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 13:48:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 13:48:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-07 13:48:34 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-07 13:48:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1531 ms
+2026-07-07 13:48:34 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-07 13:48:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-07 13:48:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1791e231
+2026-07-07 13:48:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-07 13:48:35 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-07 13:48:35 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 8
+2026-07-07 13:48:35 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-07 13:48:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 13:48:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-07 13:48:35 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 13:48:35 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 13:48:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 13:48:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 13:48:37 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-07 13:48:39 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 13:48:39 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-07 13:48:39 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 6.413 seconds (process running for 6.969)
+2026-07-07 13:49:29 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07 13:49:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-07 13:49:29 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-07 13:49:29 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan01
+2026-07-07 13:49:29 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - User found: dinhvan01, checking password...
+2026-07-07 13:49:29 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-07 13:51:00 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-07 13:51:00 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-07 13:51:00 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-07 13:54:07 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvann
+2026-07-07 13:54:07 [http-nio-8080-exec-6] ERROR c.e.r.service.AuthenticationService - User not found: dinhvann
+2026-07-07 13:54:11 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvannn
+2026-07-07 13:54:11 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - User found: dinhvannn, checking password...
+2026-07-07 13:54:12 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-07 14:32:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 14:32:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-07 14:32:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-07 14:32:13 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-07 14:32:13 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 11992 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-07 14:32:13 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-07 14:32:13 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-07 14:32:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07 14:32:14 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 9 JPA repository interfaces.
+2026-07-07 14:32:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-07 14:32:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-07 14:32:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-07 14:32:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-07 14:32:15 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-07 14:32:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1538 ms
+2026-07-07 14:32:15 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-07 14:32:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-07 14:32:15 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3bc891f2
+2026-07-07 14:32:15 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-07 14:32:15 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-07 14:32:15 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 8
+2026-07-07 14:32:15 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `resort` to version "9 - add room image url"
+2026-07-07 14:32:16 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema `resort` to version "10 - add housekeeping cleaning tasks"
+2026-07-07 14:32:16 [main] WARN  o.f.c.i.s.DefaultSqlScriptExecutor - DB: Integer display width is deprecated and will be removed in a future release. (SQL State: HY000 - Error Code: 1681)
+2026-07-07 14:32:16 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 2 migrations to schema `resort`, now at version v10 (execution time 00:00.100s)
+2026-07-07 14:32:16 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-07 14:32:16 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-07 14:32:16 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-07 14:32:16 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07 14:32:17 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07 14:32:17 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 14:32:17 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-07 14:32:19 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-07 14:32:19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-07 14:32:19 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 6.675 seconds (process running for 7.203)
+2026-07-07 14:51:34 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07 14:51:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-07 14:51:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

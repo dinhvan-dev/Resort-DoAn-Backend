@@ -1,0 +1,9 @@
+com\example\resort\entity\CleaningTask$CleaningTaskBuilderImpl.class
+com\example\resort\enums\cleaning\CleaningTaskStatus.class
+com\example\resort\dto\response\CleaningTaskResponse.class
+com\example\resort\entity\CleaningTask.class
+com\example\resort\dto\response\CleaningTaskResponse$CleaningTaskResponseBuilder.class
+com\example\resort\controller\CleaningTaskController.class
+com\example\resort\entity\CleaningTask$CleaningTaskBuilder.class
+com\example\resort\repository\CleaningTaskRepository.class
+com\example\resort\service\CleaningTaskService.class
