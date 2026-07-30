@@ -7,6 +7,8 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
+import java.util.List;
+
 @Getter
 @Setter
 @Builder
@@ -24,4 +26,7 @@ public class RoomUpdateRequest {
 
     @Size(max = 1024, message = "Image URL must not exceed 1024 characters")
     private String imageUrl;
+
+    @Size(min = 3, max = 5, message = "Room must have between 3 and 5 images")
+    private List<@Size(max = 1024, message = "Image URL must not exceed 1024 characters") String> imageUrls;
 }

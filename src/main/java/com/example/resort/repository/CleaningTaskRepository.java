@@ -2,7 +2,9 @@ package com.example.resort.repository;
 
 import com.example.resort.entity.CleaningTask;
 import com.example.resort.enums.cleaning.CleaningTaskStatus;
+import jakarta.persistence.LockModeType;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Lock;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
@@ -14,6 +16,10 @@ public interface CleaningTaskRepository extends JpaRepository<CleaningTask, Long
 
     @Query("SELECT c FROM CleaningTask c WHERE c.taskId = :taskId AND c.isActive = true")
     Optional<CleaningTask> findActiveById(@Param("taskId") Long taskId);
+
+    @Lock(LockModeType.PESSIMISTIC_WRITE)
+    @Query("SELECT c FROM CleaningTask c WHERE c.taskId = :taskId AND c.isActive = true")
+    Optional<CleaningTask> findActiveByIdForUpdate(@Param("taskId") Long taskId);
 
     @Query("SELECT c FROM CleaningTask c WHERE c.isActive = true ORDER BY c.createdAt DESC")
     List<CleaningTask> findAllActive();
@@ -40,4 +46,11 @@ public interface CleaningTaskRepository extends JpaRepository<CleaningTask, Long
             @Param("roomId") Long roomId,
             @Param("statuses") Collection<CleaningTaskStatus> statuses
     );
+
+    @Query("""
+            SELECT COUNT(c) FROM CleaningTask c
+            WHERE c.isActive = true
+            AND c.status = :status
+            """)
+    long countActiveByStatus(@Param("status") CleaningTaskStatus status);
 }

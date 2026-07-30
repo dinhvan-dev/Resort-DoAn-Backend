@@ -1,0 +1,4023 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< com.example:resort >-------------------------
+[INFO] Building resort 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.2:run (default-cli) > test-compile @ resort >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ resort ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 16 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ resort ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 107 source files with javac [debug parameters release 21] to target\classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[WARNING] /D:/BaoCao/resort/resort/src/main/java/com/example/resort/mapper/UserMapper.java:[27,10] Unmapped target property: "active".
+[WARNING] /D:/BaoCao/resort/resort/src/main/java/com/example/resort/mapper/UserMapper.java:[29,18] Unmapped target property: "isActive".
+[INFO] /D:/BaoCao/resort/resort/src/main/java/com/example/resort/filter/RateLimitFilter.java: D:\BaoCao\resort\resort\src\main\java\com\example\resort\filter\RateLimitFilter.java uses or overrides a deprecated API.
+[INFO] /D:/BaoCao/resort/resort/src/main/java/com/example/resort/filter/RateLimitFilter.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ resort ---
+[INFO] skip non existing resourceDirectory D:\BaoCao\resort\resort\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ resort ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 21] to target\test-classes
+[INFO] Annotation processing is enabled because one or more processors were found
+  on the class path. A future release of javac may disable annotation processing
+  unless at least one processor is specified by name (-processor), or a search
+  path is specified (--processor-path, --processor-module-path), or annotation
+  processing is enabled explicitly (-proc:only, -proc:full).
+  Use -Xlint:-options to suppress this message.
+  Use -proc:none to disable annotation processing.
+[INFO] 
+[INFO] <<< spring-boot:3.3.2:run (default-cli) < test-compile @ resort <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.2:run (default-cli) @ resort ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2026-07-24 23:38:27 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-24 23:38:27 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 12192 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-24 23:38:27 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-24 23:38:27 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-24 23:38:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-24 23:38:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 10 JPA repository interfaces.
+2026-07-24 23:38:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-24 23:38:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:38:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-24 23:38:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-24 23:38:29 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-24 23:38:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1785 ms
+2026-07-24 23:38:29 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-24 23:38:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-24 23:38:30 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74e4be21
+2026-07-24 23:38:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-24 23:38:30 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-24 23:38:30 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 15
+2026-07-24 23:38:30 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-24 23:38:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-24 23:38:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-24 23:38:30 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-24 23:38:30 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-24 23:38:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-24 23:38:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:38:32 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-24 23:38:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:38:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-24 23:38:34 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 7.629 seconds (process running for 7.961)
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - Password match result: true
+Hibernate: 
+    insert 
+    into
+        refresh_tokens
+        (created_at, expiry_time, revoked, token, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.phone_number=? 
+    limit
+        ?
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, full_name, is_active, password, phone_number, role, updated_at, username, userId) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:01 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - anonymousUser - CREATE - User - d4125de1-d3e1-44fe-a2ec-924bf6540bf7 - SUCCESS
+2026-07-24 23:40:01 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexu0724234000
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-07-24 23:40:01 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - User found: codexu0724234000, checking password...
+2026-07-24 23:40:01 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Password match result: true
+Hibernate: 
+    insert 
+    into
+        refresh_tokens
+        (created_at, expiry_time, revoked, token, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        and u1_0.is_active=1
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.phone_number=? 
+    limit
+        ?
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, full_name, is_active, password, phone_number, role, updated_at, username, userId) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:02 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - admin - CREATE - User - 3b638dcb-e077-4917-87e0-da70e6025987 - SUCCESS
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.phone_number=? 
+    limit
+        ?
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, email, full_name, is_active, password, phone_number, role, updated_at, username, userId) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:02 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - admin - CREATE - User - 1cacf6c3-251e-4950-9850-ee56e55e7a18 - SUCCESS
+2026-07-24 23:40:03 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexs0724234000
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-07-24 23:40:03 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - User found: codexs0724234000, checking password...
+2026-07-24 23:40:03 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Password match result: true
+Hibernate: 
+    insert 
+    into
+        refresh_tokens
+        (created_at, expiry_time, revoked, token, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:03 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexh0724234000
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-07-24 23:40:03 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - User found: codexh0724234000, checking password...
+2026-07-24 23:40:03 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Password match result: true
+Hibernate: 
+    insert 
+    into
+        refresh_tokens
+        (created_at, expiry_time, revoked, token, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.is_active=1
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.role=? 
+        and u1_0.is_active=1
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.role=? 
+        and u1_0.is_active=1
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.status,
+        count(b1_0.bookingId) 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+    group by
+        b1_0.status
+Hibernate: 
+    select
+        r1_0.status,
+        count(r1_0.roomId) 
+    from
+        rooms r1_0 
+    group by
+        r1_0.status
+Hibernate: 
+    select
+        p1_0.payment_status,
+        count(p1_0.payment_id) 
+    from
+        payments p1_0 
+    where
+        p1_0.is_active=1 
+    group by
+        p1_0.payment_status
+Hibernate: 
+    select
+        coalesce(sum(p1_0.amount), 0) 
+    from
+        payments p1_0 
+    where
+        p1_0.is_active=1 
+        and p1_0.payment_status='PAID'
+Hibernate: 
+    select
+        coalesce(sum(p1_0.amount), 0) 
+    from
+        payments p1_0 
+    where
+        p1_0.is_active=1 
+        and p1_0.payment_status='PAID' 
+        and p1_0.paid_at>=? 
+        and p1_0.paid_at<?
+Hibernate: 
+    select
+        count(b1_0.bookingId) 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1
+Hibernate: 
+    select
+        count(r1_0.roomId) 
+    from
+        rooms r1_0
+Hibernate: 
+    select
+        count(c1_0.customerId) 
+    from
+        customers c1_0 
+    where
+        c1_0.is_active=1
+Hibernate: 
+    select
+        count(u1_0.userId) 
+    from
+        users u1_0 
+    where
+        u1_0.is_active=1
+Hibernate: 
+    select
+        date(p1_0.paid_at),
+        coalesce(sum(p1_0.amount), 0) 
+    from
+        payments p1_0 
+    where
+        p1_0.is_active=1 
+        and p1_0.payment_status='PAID' 
+        and p1_0.paid_at>=? 
+    group by
+        date(p1_0.paid_at) 
+    order by
+        date(p1_0.paid_at)
+Hibernate: 
+    select
+        r1_0.roomNumber,
+        count(b1_0.bookingId),
+        coalesce(sum(b1_0.totalPrice), 0) 
+    from
+        bookings b1_0 
+    join
+        rooms r1_0 
+            on r1_0.roomId=b1_0.roomId 
+    where
+        b1_0.is_active=1 
+    group by
+        r1_0.roomNumber 
+    order by
+        count(b1_0.bookingId) desc 
+    limit
+        ?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+    order by
+        b1_0.created_at desc 
+    limit
+        ?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        al1_0.performer_id,
+        al1_0.action,
+        al1_0.audit_status,
+        al1_0.created_at,
+        al1_0.detail,
+        al1_0.entity_id,
+        al1_0.entity_name,
+        al1_0.ip_address,
+        al1_0.username 
+    from
+        audit_log al1_0
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        r1_0.roomId 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomNumber=? 
+    limit
+        ?
+Hibernate: 
+    insert 
+    into
+        rooms
+        (floor, imageUrl, pricePerNight, roomNumber, status, type) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        room_images
+        (roomId, sortOrder, imageUrl) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        room_images
+        (roomId, sortOrder, imageUrl) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        room_images
+        (roomId, sortOrder, imageUrl) 
+    values
+        (?, ?, ?)
+2026-07-24 23:40:05 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724234000 - CREATE - Room - 739 - SUCCESS
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomNumber=?
+Hibernate: 
+    select
+        iu1_0.roomId,
+        iu1_0.sortOrder,
+        iu1_0.imageUrl 
+    from
+        room_images iu1_0 
+    where
+        iu1_0.roomId=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomNumber=?
+Hibernate: 
+    select
+        iu1_0.roomId,
+        iu1_0.sortOrder,
+        iu1_0.imageUrl 
+    from
+        room_images iu1_0 
+    where
+        iu1_0.roomId=?
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        rooms 
+    set
+        floor=?,
+        imageUrl=?,
+        pricePerNight=?,
+        roomNumber=?,
+        status=?,
+        type=? 
+    where
+        roomId=?
+2026-07-24 23:40:06 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724234000 - UPDATE - Room - 739 - SUCCESS
+Hibernate: 
+    insert 
+    into
+        room_images
+        (roomId, sortOrder, imageUrl) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    order by
+        r1_0.roomId 
+    limit
+        ?, ?
+Hibernate: 
+    select
+        iu1_0.roomId,
+        iu1_0.sortOrder,
+        iu1_0.imageUrl 
+    from
+        room_images iu1_0 
+    where
+        iu1_0.roomId=?
+Hibernate: 
+    select
+        iu1_0.roomId,
+        iu1_0.sortOrder,
+        iu1_0.imageUrl 
+    from
+        room_images iu1_0 
+    where
+        iu1_0.roomId=?
+Hibernate: 
+    select
+        iu1_0.roomId,
+        iu1_0.sortOrder,
+        iu1_0.imageUrl 
+    from
+        room_images iu1_0 
+    where
+        iu1_0.roomId=?
+Hibernate: 
+    select
+        iu1_0.roomId,
+        iu1_0.sortOrder,
+        iu1_0.imageUrl 
+    from
+        room_images iu1_0 
+    where
+        iu1_0.roomId=?
+Hibernate: 
+    select
+        iu1_0.roomId,
+        iu1_0.sortOrder,
+        iu1_0.imageUrl 
+    from
+        room_images iu1_0 
+    where
+        iu1_0.roomId=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber
+Hibernate: 
+    select
+        coalesce(sum(coalesce(b1_0.quantity, 1)), 0) 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+        and b1_0.roomType=? 
+        and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+        and b1_0.checkedInDate<? 
+        and b1_0.checkedOutDate>? 
+        and (
+            ? is null 
+            or b1_0.bookingId<>?
+        )
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+        and r1_0.roomId not in (select
+            b1_0.roomId 
+        from
+            bookings b1_0 
+        where
+            b1_0.is_active=1 
+            and b1_0.roomId is not null 
+            and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+            and b1_0.checkedInDate<? 
+            and b1_0.checkedOutDate>?) 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber
+Hibernate: 
+    select
+        iu1_0.roomId,
+        iu1_0.sortOrder,
+        iu1_0.imageUrl 
+    from
+        room_images iu1_0 
+    where
+        iu1_0.roomId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber
+Hibernate: 
+    select
+        coalesce(sum(coalesce(b1_0.quantity, 1)), 0) 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+        and b1_0.roomType=? 
+        and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+        and b1_0.checkedInDate<? 
+        and b1_0.checkedOutDate>? 
+        and (
+            ? is null 
+            or b1_0.bookingId<>?
+        )
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+        and r1_0.roomId not in (select
+            b1_0.roomId 
+        from
+            bookings b1_0 
+        where
+            b1_0.is_active=1 
+            and b1_0.roomId is not null 
+            and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+            and b1_0.checkedInDate<? 
+            and b1_0.checkedOutDate>?) 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber
+Hibernate: 
+    select
+        coalesce(sum(coalesce(b1_0.quantity, 1)), 0) 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+        and b1_0.roomType=? 
+        and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+        and b1_0.checkedInDate<? 
+        and b1_0.checkedOutDate>? 
+        and (
+            ? is null 
+            or b1_0.bookingId<>?
+        )
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+        and r1_0.roomId not in (select
+            b1_0.roomId 
+        from
+            bookings b1_0 
+        where
+            b1_0.is_active=1 
+            and b1_0.roomId is not null 
+            and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+            and b1_0.checkedInDate<? 
+            and b1_0.checkedOutDate>?) 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        count(c1_0.customerId)>0 
+    from
+        customers c1_0 
+    join
+        users u1_0 
+            on u1_0.userId=c1_0.user_id 
+    where
+        u1_0.username=? 
+        and c1_0.is_active=1
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        and u1_0.is_active=1
+Hibernate: 
+    select
+        c1_0.customerId 
+    from
+        customers c1_0 
+    where
+        c1_0.email=? 
+    limit
+        ?
+Hibernate: 
+    select
+        c1_0.customerId 
+    from
+        customers c1_0 
+    where
+        c1_0.phoneNumber=? 
+    limit
+        ?
+Hibernate: 
+    select
+        c1_0.customerId 
+    from
+        customers c1_0 
+    where
+        c1_0.identityNumber=? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+        and u1_0.userId<>? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.phone_number=? 
+        and u1_0.userId<>? 
+    limit
+        ?
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        customers
+        (address, created_at, dateOfBirth, email, fullName, identityNumber, is_active, phoneNumber, updated_at, user_id, customerId) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        users 
+    set
+        email=?,
+        full_name=?,
+        is_active=?,
+        password=?,
+        phone_number=?,
+        role=?,
+        updated_at=?,
+        username=? 
+    where
+        userId=?
+2026-07-24 23:40:07 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - Customer - 3db726c5-4910-4d5a-9a64-ba84ababda02 - SUCCESS
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    join
+        users u1_0 
+            on u1_0.userId=c1_0.user_id 
+    where
+        u1_0.username=? 
+        and c1_0.is_active=1
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    join
+        users u1_0 
+            on u1_0.userId=c1_0.user_id 
+    where
+        u1_0.username=? 
+        and c1_0.is_active=1
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        and u1_0.is_active=1
+Hibernate: 
+    select
+        c1_0.customerId 
+    from
+        customers c1_0 
+    where
+        c1_0.phoneNumber=? 
+        and c1_0.customerId<>? 
+    limit
+        ?
+Hibernate: 
+    select
+        u1_0.userId 
+    from
+        users u1_0 
+    where
+        u1_0.phone_number=? 
+        and u1_0.userId<>? 
+    limit
+        ?
+Hibernate: 
+    update
+        customers 
+    set
+        address=?,
+        dateOfBirth=?,
+        email=?,
+        fullName=?,
+        identityNumber=?,
+        is_active=?,
+        phoneNumber=?,
+        updated_at=?,
+        user_id=? 
+    where
+        customerId=?
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        users 
+    set
+        email=?,
+        full_name=?,
+        is_active=?,
+        password=?,
+        phone_number=?,
+        role=?,
+        updated_at=?,
+        username=? 
+    where
+        userId=?
+2026-07-24 23:40:08 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - UPDATE - Customer - 3db726c5-4910-4d5a-9a64-ba84ababda02 - SUCCESS
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.is_active=1 
+    order by
+        c1_0.fullName 
+    limit
+        ?
+Hibernate: 
+    select
+        count(c1_0.customerId) 
+    from
+        customers c1_0 
+    where
+        c1_0.is_active=1
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=? 
+        and c1_0.is_active=1
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.userId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber
+Hibernate: 
+    select
+        coalesce(sum(coalesce(b1_0.quantity, 1)), 0) 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+        and b1_0.roomType=? 
+        and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+        and b1_0.checkedInDate<? 
+        and b1_0.checkedOutDate>? 
+        and (
+            ? is null 
+            or b1_0.bookingId<>?
+        )
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+        and r1_0.roomId not in (select
+            b1_0.roomId 
+        from
+            bookings b1_0 
+        where
+            b1_0.is_active=1 
+            and b1_0.roomId is not null 
+            and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+            and b1_0.checkedInDate<? 
+            and b1_0.checkedOutDate>?) 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber for update
+Hibernate: 
+    insert 
+    into
+        bookings
+        (checkedInDate, checkedOutDate, created_at, customerId, discountAmount, is_active, numberOfGuests, numberOfNights, pricePerNight, quantity, roomId, roomType, serviceFee, status, subtotal, taxAmount, totalAmount, totalPrice, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:08 [http-nio-8080-exec-3] INFO  o.s.s.a.AnnotationAsyncExecutionInterceptor - More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [auditLogExecutor, taskScheduler]
+2026-07-24 23:40:08 [http-nio-8080-exec-3] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CREATED, aggregate=Booking, aggregateId=7, username=codexu0724234000, source=BookingService.createBooking
+2026-07-24 23:40:08 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - Booking - 7 - SUCCESS
+2026-07-24 23:40:08 [SimpleAsyncTaskExecutor-1] INFO  c.e.resort.service.EmailService - Sending booking created email for booking: 7
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=? 
+        and c1_0.is_active=1
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.userId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber
+Hibernate: 
+    select
+        coalesce(sum(coalesce(b1_0.quantity, 1)), 0) 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+        and b1_0.roomType=? 
+        and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+        and b1_0.checkedInDate<? 
+        and b1_0.checkedOutDate>? 
+        and (
+            ? is null 
+            or b1_0.bookingId<>?
+        )
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+        and r1_0.roomId not in (select
+            b1_0.roomId 
+        from
+            bookings b1_0 
+        where
+            b1_0.is_active=1 
+            and b1_0.roomId is not null 
+            and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+            and b1_0.checkedInDate<? 
+            and b1_0.checkedOutDate>?) 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber for update
+Hibernate: 
+    insert 
+    into
+        bookings
+        (checkedInDate, checkedOutDate, created_at, customerId, discountAmount, is_active, numberOfGuests, numberOfNights, pricePerNight, quantity, roomId, roomType, serviceFee, status, subtotal, taxAmount, totalAmount, totalPrice, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:09 [http-nio-8080-exec-4] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CREATED, aggregate=Booking, aggregateId=8, username=codexu0724234000, source=BookingService.createBooking
+2026-07-24 23:40:09 [SimpleAsyncTaskExecutor-2] INFO  c.e.resort.service.EmailService - Sending booking created email for booking: 8
+2026-07-24 23:40:09 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - Booking - 8 - SUCCESS
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=? 
+        and c1_0.is_active=1
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.userId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber
+Hibernate: 
+    select
+        coalesce(sum(coalesce(b1_0.quantity, 1)), 0) 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+        and b1_0.roomType=? 
+        and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+        and b1_0.checkedInDate<? 
+        and b1_0.checkedOutDate>? 
+        and (
+            ? is null 
+            or b1_0.bookingId<>?
+        )
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.type=? 
+        and r1_0.status<>'MAINTENANCE' 
+        and r1_0.roomId not in (select
+            b1_0.roomId 
+        from
+            bookings b1_0 
+        where
+            b1_0.is_active=1 
+            and b1_0.roomId is not null 
+            and b1_0.status not in ('CANCELLED', 'CHECKED_OUT') 
+            and b1_0.checkedInDate<? 
+            and b1_0.checkedOutDate>?) 
+    order by
+        r1_0.pricePerNight,
+        r1_0.roomNumber for update
+Hibernate: 
+    insert 
+    into
+        bookings
+        (checkedInDate, checkedOutDate, created_at, customerId, discountAmount, is_active, numberOfGuests, numberOfNights, pricePerNight, quantity, roomId, roomType, serviceFee, status, subtotal, taxAmount, totalAmount, totalPrice, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:09 [http-nio-8080-exec-6] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CREATED, aggregate=Booking, aggregateId=9, username=codexu0724234000, source=BookingService.createBooking
+2026-07-24 23:40:09 [SimpleAsyncTaskExecutor-3] INFO  c.e.resort.service.EmailService - Sending booking created email for booking: 9
+2026-07-24 23:40:09 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - Booking - 9 - SUCCESS
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    join
+        customers c1_0 
+            on c1_0.customerId=b1_0.customerId 
+    join
+        users u1_0 
+            on u1_0.userId=c1_0.user_id 
+    where
+        u1_0.username=? 
+        and b1_0.is_active=1 
+    order by
+        b1_0.created_at desc
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=? 
+        and b1_0.is_active=1
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.userId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=? 
+        and b1_0.is_active=1 for update
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.userId=?
+Hibernate: 
+    update
+        bookings 
+    set
+        checkedInDate=?,
+        checkedOutDate=?,
+        customerId=?,
+        discountAmount=?,
+        is_active=?,
+        numberOfGuests=?,
+        numberOfNights=?,
+        pricePerNight=?,
+        quantity=?,
+        roomId=?,
+        roomType=?,
+        serviceFee=?,
+        status=?,
+        subtotal=?,
+        taxAmount=?,
+        totalAmount=?,
+        totalPrice=?,
+        updated_at=? 
+    where
+        bookingId=?
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:10 [http-nio-8080-exec-2] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CANCELLED, aggregate=Booking, aggregateId=8, username=codexu0724234000, source=BookingService.cancelBooking
+2026-07-24 23:40:10 [SimpleAsyncTaskExecutor-4] INFO  c.e.resort.service.EmailService - Sending booking canceled email for booking: 8
+2026-07-24 23:40:10 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CANCEL - Booking - 8 - SUCCESS
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+    order by
+        b1_0.created_at desc 
+    limit
+        ?
+Hibernate: 
+    select
+        count(b1_0.bookingId) 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.status=? 
+        and b1_0.is_active=1
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=? 
+        and b1_0.is_active=1
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.userId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    insert 
+    into
+        payments
+        (amount, booking_id, created_at, is_active, paid_at, payment_expired_at, payment_group_id, payment_method, payment_status, updated_at, vnpay_order_info, vnpay_transaction_id, payment_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:11 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - Payment - a0ba146a-a5a2-4cfd-b52d-c7068628c16b - SUCCESS
+2026-07-24 23:40:11 [http-nio-8080-exec-7] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=PAYMENT_CREATED, aggregate=Payment, aggregateId=a0ba146a-a5a2-4cfd-b52d-c7068628c16b, username=codexu0724234000, source=PaymentService.createPayment
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.is_active=1 
+        and p1_0.payment_method='CASH' 
+        and p1_0.payment_status='PENDING' 
+    order by
+        p1_0.created_at desc
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.payment_id=? 
+        and p1_0.is_active=1 for update
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=?
+2026-07-24 23:40:12 [http-nio-8080-exec-3] INFO  c.e.resort.service.PaymentService - Cash payment confirmed for booking: 7
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        payments 
+    set
+        amount=?,
+        booking_id=?,
+        is_active=?,
+        paid_at=?,
+        payment_expired_at=?,
+        payment_group_id=?,
+        payment_method=?,
+        payment_status=?,
+        updated_at=?,
+        vnpay_order_info=?,
+        vnpay_transaction_id=? 
+    where
+        payment_id=?
+Hibernate: 
+    update
+        bookings 
+    set
+        checkedInDate=?,
+        checkedOutDate=?,
+        customerId=?,
+        discountAmount=?,
+        is_active=?,
+        numberOfGuests=?,
+        numberOfNights=?,
+        pricePerNight=?,
+        quantity=?,
+        roomId=?,
+        roomType=?,
+        serviceFee=?,
+        status=?,
+        subtotal=?,
+        taxAmount=?,
+        totalAmount=?,
+        totalPrice=?,
+        updated_at=? 
+    where
+        bookingId=?
+2026-07-24 23:40:12 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724234000 - CONFIRM_CASH - Payment - a0ba146a-a5a2-4cfd-b52d-c7068628c16b - SUCCESS
+2026-07-24 23:40:12 [http-nio-8080-exec-3] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=PAYMENT_PAID, aggregate=Payment, aggregateId=a0ba146a-a5a2-4cfd-b52d-c7068628c16b, username=codexs0724234000, source=PaymentService.confirmCashPayment
+2026-07-24 23:40:12 [SimpleAsyncTaskExecutor-6] INFO  c.e.resort.service.EmailService - Sending payment paid email for payment: a0ba146a-a5a2-4cfd-b52d-c7068628c16b
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.userId=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.is_active=1 
+    order by
+        p1_0.created_at desc
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=?
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=? 
+        and b1_0.is_active=1
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.userId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id in (?) 
+        and p1_0.is_active=1
+Hibernate: 
+    insert 
+    into
+        payment_groups
+        (amount, created_at, is_active, paid_at, payment_expired_at, payment_method, payment_status, updated_at, vnpay_order_info, vnpay_transaction_id, payment_group_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        payments
+        (amount, booking_id, created_at, is_active, paid_at, payment_expired_at, payment_group_id, payment_method, payment_status, updated_at, vnpay_order_info, vnpay_transaction_id, payment_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:13 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - PaymentGroup - 8ab38320-a44a-44a3-8852-7a547a6948fe - SUCCESS
+2026-07-24 23:40:13 [http-nio-8080-exec-8] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=PAYMENT_CHECKOUT_CREATED, aggregate=PaymentGroup, aggregateId=8ab38320-a44a-44a3-8852-7a547a6948fe, username=codexu0724234000, source=PaymentService.createCheckout
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=? 
+        and b1_0.is_active=1 for update
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        bookings 
+    set
+        checkedInDate=?,
+        checkedOutDate=?,
+        customerId=?,
+        discountAmount=?,
+        is_active=?,
+        numberOfGuests=?,
+        numberOfNights=?,
+        pricePerNight=?,
+        quantity=?,
+        roomId=?,
+        roomType=?,
+        serviceFee=?,
+        status=?,
+        subtotal=?,
+        taxAmount=?,
+        totalAmount=?,
+        totalPrice=?,
+        updated_at=? 
+    where
+        bookingId=?
+Hibernate: 
+    update
+        rooms 
+    set
+        floor=?,
+        imageUrl=?,
+        pricePerNight=?,
+        roomNumber=?,
+        status=?,
+        type=? 
+    where
+        roomId=?
+2026-07-24 23:40:13 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724234000 - CHECK_IN - Booking - 7 - SUCCESS
+2026-07-24 23:40:13 [http-nio-8080-exec-9] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CHECKED_IN, aggregate=Booking, aggregateId=7, username=codexs0724234000, source=BookingService.checkIn
+2026-07-24 23:40:13 [SimpleAsyncTaskExecutor-8] INFO  c.e.resort.service.EmailService - Sending check-in email for booking: 7
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.bookingId=? 
+        and b1_0.is_active=1 for update
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        count(ct1_0.taskId)>0 
+    from
+        cleaning_tasks ct1_0 
+    where
+        ct1_0.roomId=? 
+        and ct1_0.is_active=1 
+        and ct1_0.status in (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        cleaning_tasks
+        (assigned_to, bookingId, completed_at, created_at, is_active, roomId, started_at, status, updated_at, verified_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        c1_0.customerId,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.dateOfBirth,
+        c1_0.email,
+        c1_0.fullName,
+        c1_0.identityNumber,
+        c1_0.is_active,
+        c1_0.phoneNumber,
+        c1_0.updated_at,
+        c1_0.user_id 
+    from
+        customers c1_0 
+    where
+        c1_0.customerId=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.booking_id=? 
+        and p1_0.is_active=1
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        bookings 
+    set
+        checkedInDate=?,
+        checkedOutDate=?,
+        customerId=?,
+        discountAmount=?,
+        is_active=?,
+        numberOfGuests=?,
+        numberOfNights=?,
+        pricePerNight=?,
+        quantity=?,
+        roomId=?,
+        roomType=?,
+        serviceFee=?,
+        status=?,
+        subtotal=?,
+        taxAmount=?,
+        totalAmount=?,
+        totalPrice=?,
+        updated_at=? 
+    where
+        bookingId=?
+Hibernate: 
+    update
+        rooms 
+    set
+        floor=?,
+        imageUrl=?,
+        pricePerNight=?,
+        roomNumber=?,
+        status=?,
+        type=? 
+    where
+        roomId=?
+2026-07-24 23:40:14 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724234000 - CHECK_OUT - Booking - 7 - SUCCESS
+2026-07-24 23:40:14 [http-nio-8080-exec-2] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CHECKED_OUT, aggregate=Booking, aggregateId=7, username=codexs0724234000, source=BookingService.checkOut
+2026-07-24 23:40:14 [SimpleAsyncTaskExecutor-9] INFO  c.e.resort.service.EmailService - Sending check-out email for booking: 7
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        ct1_0.taskId,
+        ct1_0.assigned_to,
+        ct1_0.bookingId,
+        ct1_0.completed_at,
+        ct1_0.created_at,
+        ct1_0.is_active,
+        ct1_0.roomId,
+        ct1_0.started_at,
+        ct1_0.status,
+        ct1_0.updated_at,
+        ct1_0.verified_at 
+    from
+        cleaning_tasks ct1_0 
+    where
+        ct1_0.is_active=1 
+    order by
+        ct1_0.created_at desc
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        ct1_0.taskId,
+        ct1_0.assigned_to,
+        ct1_0.bookingId,
+        ct1_0.completed_at,
+        ct1_0.created_at,
+        ct1_0.is_active,
+        ct1_0.roomId,
+        ct1_0.started_at,
+        ct1_0.status,
+        ct1_0.updated_at,
+        ct1_0.verified_at 
+    from
+        cleaning_tasks ct1_0 
+    where
+        ct1_0.taskId=? 
+        and ct1_0.is_active=1 for update
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    update
+        cleaning_tasks 
+    set
+        assigned_to=?,
+        bookingId=?,
+        completed_at=?,
+        is_active=?,
+        roomId=?,
+        started_at=?,
+        status=?,
+        updated_at=?,
+        verified_at=? 
+    where
+        taskId=?
+Hibernate: 
+    update
+        rooms 
+    set
+        floor=?,
+        imageUrl=?,
+        pricePerNight=?,
+        roomNumber=?,
+        status=?,
+        type=? 
+    where
+        roomId=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        ct1_0.taskId,
+        ct1_0.assigned_to,
+        ct1_0.bookingId,
+        ct1_0.completed_at,
+        ct1_0.created_at,
+        ct1_0.is_active,
+        ct1_0.roomId,
+        ct1_0.started_at,
+        ct1_0.status,
+        ct1_0.updated_at,
+        ct1_0.verified_at 
+    from
+        cleaning_tasks ct1_0 
+    where
+        ct1_0.taskId=? 
+        and ct1_0.is_active=1 for update
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    update
+        cleaning_tasks 
+    set
+        assigned_to=?,
+        bookingId=?,
+        completed_at=?,
+        is_active=?,
+        roomId=?,
+        started_at=?,
+        status=?,
+        updated_at=?,
+        verified_at=? 
+    where
+        taskId=?
+Hibernate: 
+    update
+        rooms 
+    set
+        floor=?,
+        imageUrl=?,
+        pricePerNight=?,
+        roomNumber=?,
+        status=?,
+        type=? 
+    where
+        roomId=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        ct1_0.taskId,
+        ct1_0.assigned_to,
+        ct1_0.bookingId,
+        ct1_0.completed_at,
+        ct1_0.created_at,
+        ct1_0.is_active,
+        ct1_0.roomId,
+        ct1_0.started_at,
+        ct1_0.status,
+        ct1_0.updated_at,
+        ct1_0.verified_at 
+    from
+        cleaning_tasks ct1_0 
+    where
+        ct1_0.taskId=? 
+        and ct1_0.is_active=1 for update
+Hibernate: 
+    select
+        r1_0.roomId,
+        r1_0.floor,
+        r1_0.imageUrl,
+        r1_0.pricePerNight,
+        r1_0.roomNumber,
+        r1_0.status,
+        r1_0.type 
+    from
+        rooms r1_0 
+    where
+        r1_0.roomId=?
+Hibernate: 
+    update
+        cleaning_tasks 
+    set
+        assigned_to=?,
+        bookingId=?,
+        completed_at=?,
+        is_active=?,
+        roomId=?,
+        started_at=?,
+        status=?,
+        updated_at=?,
+        verified_at=? 
+    where
+        taskId=?
+Hibernate: 
+    update
+        rooms 
+    set
+        floor=?,
+        imageUrl=?,
+        pricePerNight=?,
+        roomNumber=?,
+        status=?,
+        type=? 
+    where
+        roomId=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+        and b1_0.checkedInDate=? 
+        and b1_0.status='CONFIRMED' 
+    order by
+        b1_0.checkedInDate,
+        b1_0.created_at
+Hibernate: 
+    select
+        b1_0.bookingId,
+        b1_0.checkedInDate,
+        b1_0.checkedOutDate,
+        b1_0.created_at,
+        b1_0.customerId,
+        b1_0.discountAmount,
+        b1_0.is_active,
+        b1_0.numberOfGuests,
+        b1_0.numberOfNights,
+        b1_0.pricePerNight,
+        b1_0.quantity,
+        b1_0.roomId,
+        b1_0.roomType,
+        b1_0.serviceFee,
+        b1_0.status,
+        b1_0.subtotal,
+        b1_0.taxAmount,
+        b1_0.totalAmount,
+        b1_0.totalPrice,
+        b1_0.updated_at 
+    from
+        bookings b1_0 
+    where
+        b1_0.is_active=1 
+        and b1_0.checkedOutDate=? 
+        and b1_0.status='CHECKED_IN' 
+    order by
+        b1_0.checkedOutDate,
+        b1_0.created_at
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.is_active=1 
+        and p1_0.payment_method='CASH' 
+        and p1_0.payment_status='PENDING' 
+    order by
+        p1_0.created_at desc
+Hibernate: 
+    select
+        r1_0.status,
+        count(r1_0.roomId) 
+    from
+        rooms r1_0 
+    group by
+        r1_0.status
+Hibernate: 
+    select
+        count(ct1_0.taskId) 
+    from
+        cleaning_tasks ct1_0 
+    where
+        ct1_0.is_active=1 
+        and ct1_0.status=?
+Hibernate: 
+    select
+        count(ct1_0.taskId) 
+    from
+        cleaning_tasks ct1_0 
+    where
+        ct1_0.is_active=1 
+        and ct1_0.status=?
+Hibernate: 
+    select
+        count(*) 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        p1_0.payment_id,
+        p1_0.amount,
+        p1_0.booking_id,
+        p1_0.created_at,
+        p1_0.is_active,
+        p1_0.paid_at,
+        p1_0.payment_expired_at,
+        p1_0.payment_group_id,
+        p1_0.payment_method,
+        p1_0.payment_status,
+        p1_0.updated_at,
+        p1_0.vnpay_order_info,
+        p1_0.vnpay_transaction_id 
+    from
+        payments p1_0 
+    where
+        p1_0.payment_id=? 
+        and p1_0.is_active=1 for update
+2026-07-24 23:40:16 [http-nio-8080-exec-4] INFO  c.e.resort.service.PaymentService - Payment refunded: a0ba146a-a5a2-4cfd-b52d-c7068628c16b
+Hibernate: 
+    update
+        payments 
+    set
+        amount=?,
+        booking_id=?,
+        is_active=?,
+        paid_at=?,
+        payment_expired_at=?,
+        payment_group_id=?,
+        payment_method=?,
+        payment_status=?,
+        updated_at=?,
+        vnpay_order_info=?,
+        vnpay_transaction_id=? 
+    where
+        payment_id=?
+Hibernate: 
+    insert 
+    into
+        audit_log
+        (action, audit_status, created_at, detail, entity_id, entity_name, ip_address, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2026-07-24 23:40:16 [http-nio-8080-exec-4] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=PAYMENT_REFUNDED, aggregate=Payment, aggregateId=a0ba146a-a5a2-4cfd-b52d-c7068628c16b, username=admin, source=PaymentService.refundPayment
+2026-07-24 23:40:16 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - admin - REFUND - Payment - a0ba146a-a5a2-4cfd-b52d-c7068628c16b - SUCCESS
+Hibernate: 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.expiry_time,
+        rt1_0.revoked,
+        rt1_0.token,
+        rt1_0.username 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.token=?
+Hibernate: 
+    select
+        u1_0.userId,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.is_active,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.updated_at,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-07-24 23:40:16 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - Refresh token rotated for user codexu0724234000
+Hibernate: 
+    insert 
+    into
+        refresh_tokens
+        (created_at, expiry_time, revoked, token, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+Hibernate: 
+    update
+        refresh_tokens 
+    set
+        created_at=?,
+        expiry_time=?,
+        revoked=?,
+        token=?,
+        username=? 
+    where
+        id=?
+Hibernate: 
+    select
+        it1_0.token_id,
+        it1_0.expiry_time 
+    from
+        invalidatedTokes it1_0 
+    where
+        it1_0.token_id=?
+Hibernate: 
+    select
+        rt1_0.id,
+        rt1_0.created_at,
+        rt1_0.expiry_time,
+        rt1_0.revoked,
+        rt1_0.token,
+        rt1_0.username 
+    from
+        refresh_tokens rt1_0 
+    where
+        rt1_0.username=?
+Hibernate: 
+    insert 
+    into
+        invalidatedTokes
+        (expiry_time, token_id) 
+    values
+        (?, ?)
+Hibernate: 
+    delete 
+    from
+        refresh_tokens 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        refresh_tokens 
+    where
+        id=?
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  07:42 min
+[INFO] Finished at: 2026-07-24T23:46:02+07:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.2:run (default-cli) on project resort: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

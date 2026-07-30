@@ -5,6 +5,9 @@ import com.example.resort.enums.rooms.RoomType;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 @Table(name = "rooms")
 @Getter
@@ -31,6 +34,13 @@ public class Room {
 
     @Column(name = "imageUrl", length = 1024)
     private String imageUrl;
+
+    @ElementCollection
+    @CollectionTable(name = "room_images", joinColumns = @JoinColumn(name = "roomId"))
+    @OrderColumn(name = "sortOrder")
+    @Column(name = "imageUrl", nullable = false, length = 1024)
+    @Builder.Default
+    private List<String> imageUrls = new ArrayList<>();
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)

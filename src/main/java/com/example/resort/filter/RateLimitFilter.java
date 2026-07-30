@@ -40,6 +40,10 @@ public class RateLimitFilter extends OncePerRequestFilter {
             // /auth/token: chỉ 5 request/phút (chống brute force)
             limit = Bandwidth.classic(5, Refill.greedy(5, Duration.ofMinutes(1)));
         }
+        else if (path.contains("/rooms/availability"))
+        {
+            limit = Bandwidth.classic(240, Refill.greedy(240, Duration.ofMinutes(1)));
+        }
         else if (path.contains("/bookings") || path.contains("/Booking"))
         {
             // /Booking: 20 request/phút (chống spam đặt phòng)

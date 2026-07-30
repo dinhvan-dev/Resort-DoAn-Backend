@@ -1,11 +1,14 @@
 package com.example.resort.dto.request.room;
 
 import com.example.resort.enums.rooms.RoomType;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
+
+import java.util.List;
 
 @Getter
 @Setter
@@ -25,4 +28,8 @@ public class RoomCreateRequest {
 
     @Size(max = 1024, message = "Image URL must not exceed 1024 characters")
     private String imageUrl;
+
+    @NotEmpty(message = "Room images are required")
+    @Size(min = 3, max = 5, message = "Room must have between 3 and 5 images")
+    private List<@Size(max = 1024, message = "Image URL must not exceed 1024 characters") String> imageUrls;
 }

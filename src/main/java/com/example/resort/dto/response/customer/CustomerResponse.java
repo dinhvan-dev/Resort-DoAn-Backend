@@ -2,6 +2,7 @@ package com.example.resort.dto.response.customer;
 
 import lombok.*;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -15,6 +16,8 @@ public class CustomerResponse {
     private String phoneNumber;
     private String email;
     private String identityNumber;
+    private String identityMasked;
+    private LocalDate dateOfBirth;
     private String userId;
     private LocalDateTime createdAt;
 }

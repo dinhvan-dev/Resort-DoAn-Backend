@@ -1,0 +1,806 @@
+2026-07-24 15:36:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-24 15:36:05 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 5220 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-24 15:36:05 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-24 15:36:05 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-24 15:36:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-24 15:36:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 10 JPA repository interfaces.
+2026-07-24 15:36:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-24 15:36:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-24 15:36:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-24 15:36:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-24 15:36:06 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-24 15:36:06 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1704 ms
+2026-07-24 15:36:06 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-24 15:36:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-24 15:36:07 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23d978b
+2026-07-24 15:36:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-24 15:36:07 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-24 15:36:07 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 15
+2026-07-24 15:36:07 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-24 15:36:07 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-24 15:36:07 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-24 15:36:07 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-24 15:36:08 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-24 15:36:08 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-24 15:36:09 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 15:36:09 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-24 15:36:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-24 15:36:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-24 15:36:11 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 7.33 seconds (process running for 7.943)
+2026-07-24 15:36:42 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-24 15:36:42 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-24 15:36:42 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-07-24 15:36:42 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Refresh token rotated for user dinhvan01
+2026-07-24 15:36:52 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan01
+2026-07-24 15:36:52 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - User found: dinhvan01, checking password...
+2026-07-24 15:36:52 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 15:37:56 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvannn
+2026-07-24 15:37:56 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - User found: dinhvannn, checking password...
+2026-07-24 15:37:56 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 16:43:31 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Refresh token rotated for user dinhvannn
+2026-07-24 17:04:11 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 17:04:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-24 17:04:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-24 23:04:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-24 23:04:56 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 15464 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-24 23:04:56 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-24 23:04:56 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-24 23:04:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-24 23:04:57 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 10 JPA repository interfaces.
+2026-07-24 23:04:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-24 23:04:58 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:04:58 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-24 23:04:58 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-24 23:04:58 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-24 23:04:58 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2301 ms
+2026-07-24 23:04:59 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-24 23:04:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-24 23:04:59 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34f48d1
+2026-07-24 23:04:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-24 23:04:59 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-24 23:04:59 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 15
+2026-07-24 23:04:59 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-24 23:05:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-24 23:05:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-24 23:05:00 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-24 23:05:00 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-24 23:05:01 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-24 23:05:01 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:05:02 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-24 23:05:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:05:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-24 23:05:05 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 9.14 seconds (process running for 9.887)
+2026-07-24 23:05:15 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-24 23:05:15 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-24 23:05:15 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-07-24 23:05:15 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Refresh token rotated for user dinhvannn
+2026-07-24 23:05:23 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvann
+2026-07-24 23:05:23 [http-nio-8080-exec-2] ERROR c.e.r.service.AuthenticationService - User not found: dinhvann
+2026-07-24 23:05:26 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvannn
+2026-07-24 23:05:26 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - User found: dinhvannn, checking password...
+2026-07-24 23:05:26 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:08:29 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:08:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-24 23:08:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-24 23:19:02 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-24 23:19:02 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 5160 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-24 23:19:02 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-24 23:19:02 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-24 23:19:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-24 23:19:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 10 JPA repository interfaces.
+2026-07-24 23:19:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-24 23:19:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:19:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-24 23:19:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-24 23:19:05 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-24 23:19:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2452 ms
+2026-07-24 23:19:05 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-24 23:19:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-24 23:19:05 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5f82209e
+2026-07-24 23:19:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-24 23:19:05 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-24 23:19:05 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 15
+2026-07-24 23:19:05 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-24 23:19:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-24 23:19:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-24 23:19:06 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-24 23:19:06 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-24 23:19:07 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-24 23:19:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:19:08 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-24 23:19:11 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:19:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-24 23:19:11 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 8.903 seconds (process running for 9.632)
+2026-07-24 23:19:31 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-24 23:19:31 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-24 23:19:31 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-24 23:19:31 [http-nio-8080-exec-1] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-24 23:19:31 [http-nio-8080-exec-1] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-24 23:19:31 [http-nio-8080-exec-1] INFO  c.e.r.service.AuthenticationService - Password match result: false
+2026-07-24 23:19:31 [http-nio-8080-exec-1] ERROR c.e.r.service.AuthenticationService - Password mismatch for user: admin
+2026-07-24 23:19:34 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-24 23:19:34 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-24 23:19:35 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:22:32 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:22:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-24 23:22:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-24 23:30:57 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-24 23:30:57 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 21544 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-24 23:30:57 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-24 23:30:57 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-24 23:30:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-24 23:30:58 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 10 JPA repository interfaces.
+2026-07-24 23:30:59 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-24 23:30:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:30:59 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-24 23:30:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-24 23:30:59 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-24 23:30:59 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1894 ms
+2026-07-24 23:30:59 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-24 23:30:59 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-24 23:31:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1e57b783
+2026-07-24 23:31:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-24 23:31:00 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-24 23:31:00 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 15
+2026-07-24 23:31:00 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-24 23:31:00 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-24 23:31:00 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-24 23:31:00 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-24 23:31:00 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-24 23:31:02 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-24 23:31:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:31:02 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-24 23:31:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:31:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-24 23:31:06 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 9.214 seconds (process running for 9.55)
+2026-07-24 23:31:27 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-24 23:31:27 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-24 23:31:27 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-24 23:31:27 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-24 23:31:27 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-24 23:31:27 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:32:35 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-24 23:32:35 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-24 23:32:35 [http-nio-8080-exec-5] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:32:36 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - anonymousUser - CREATE - User - 5bf87f74-b68e-498b-958f-7f4180246d62 - SUCCESS
+2026-07-24 23:32:36 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexu0724233235
+2026-07-24 23:32:36 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - User found: codexu0724233235, checking password...
+2026-07-24 23:32:36 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:32:37 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - admin - CREATE - User - 63ebaaaa-3c4c-4faa-bb9d-ec07a237edd7 - SUCCESS
+2026-07-24 23:32:37 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - admin - CREATE - User - 92c82657-b786-412c-a384-66286b3c29af - SUCCESS
+2026-07-24 23:32:38 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexs0724233235
+2026-07-24 23:32:38 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - User found: codexs0724233235, checking password...
+2026-07-24 23:32:38 [http-nio-8080-exec-10] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:32:38 [http-nio-8080-exec-1] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexh0724233235
+2026-07-24 23:32:38 [http-nio-8080-exec-1] INFO  c.e.r.service.AuthenticationService - User found: codexh0724233235, checking password...
+2026-07-24 23:32:38 [http-nio-8080-exec-1] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:32:40 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724233235 - CREATE - Room - 969 - SUCCESS
+2026-07-24 23:32:41 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724233235 - UPDATE - Room - 969 - SUCCESS
+2026-07-24 23:32:42 [http-nio-8080-exec-1] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1792, SQLState: 25006
+2026-07-24 23:32:42 [http-nio-8080-exec-1] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Cannot execute statement in a READ ONLY transaction.
+2026-07-24 23:32:42 [http-nio-8080-exec-1] ERROR c.e.r.e.GlobalExceptionHandler - Unhandled exception
+org.springframework.orm.jpa.JpaSystemException: JDBC exception executing SQL [select r1_0.roomId,r1_0.floor,r1_0.imageUrl,r1_0.pricePerNight,r1_0.roomNumber,r1_0.status,r1_0.type from rooms r1_0 where r1_0.type=? and r1_0.status<>'MAINTENANCE' and r1_0.roomId not in (select b1_0.roomId from bookings b1_0 where b1_0.is_active=1 and b1_0.roomId is not null and b1_0.status not in ('CANCELLED','CHECKED_OUT') and b1_0.checkedInDate<? and b1_0.checkedOutDate>?) order by r1_0.pricePerNight,r1_0.roomNumber for update] [Cannot execute statement in a READ ONLY transaction.] [n/a]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:341)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy171.findAvailableRoomsByType(Unknown Source)
+	at com.example.resort.service.RoomService.findRepresentativeRoom(RoomService.java:201)
+	at com.example.resort.service.RoomService.toRoomTypeAvailability(RoomService.java:170)
+	at com.example.resort.service.RoomService.lambda$getRoomTypeAvailability$1(RoomService.java:100)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622)
+	at java.base/java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627)
+	at com.example.resort.service.RoomService.getRoomTypeAvailability(RoomService.java:103)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.example.resort.service.RoomService$$SpringCGLIB$$0.getRoomTypeAvailability(<generated>)
+	at com.example.resort.controller.RoomController.getRoomTypeAvailability(RoomController.java:60)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:145)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.resort.filter.RateLimitFilter.doFilterInternal(RateLimitFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.exception.GenericJDBCException: JDBC exception executing SQL [select r1_0.roomId,r1_0.floor,r1_0.imageUrl,r1_0.pricePerNight,r1_0.roomNumber,r1_0.status,r1_0.type from rooms r1_0 where r1_0.type=? and r1_0.status<>'MAINTENANCE' and r1_0.roomId not in (select b1_0.roomId from bookings b1_0 where b1_0.is_active=1 and b1_0.roomId is not null and b1_0.status not in ('CANCELLED','CHECKED_OUT') and b1_0.checkedInDate<? and b1_0.checkedOutDate>?) order by r1_0.pricePerNight,r1_0.roomNumber for update] [Cannot execute statement in a READ ONLY transaction.] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:264)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet(DeferredResultSetAccess.java:167)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext(JdbcValuesResultSetImpl.java:265)
+	at org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext(JdbcValuesResultSetImpl.java:145)
+	at org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next(AbstractJdbcValues.java:19)
+	at org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next(RowProcessingStateStandardImpl.java:67)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:204)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:33)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:211)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:83)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:76)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:65)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$2(ConcreteSqmSelectQueryPlan.java:139)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:382)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:302)
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.doList(QuerySqmImpl.java:526)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:423)
+	at org.hibernate.query.Query.getResultList(Query.java:120)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:129)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:152)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:140)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:164)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 137 common frames omitted
+Caused by: java.sql.SQLException: Cannot execute statement in a READ ONLY transaction.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:968)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery(DeferredResultSetAccess.java:246)
+	... 169 common frames omitted
+2026-07-24 23:32:42 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233235 - CREATE - Customer - **************6875 - SUCCESS
+2026-07-24 23:32:43 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233235 - UPDATE - Customer - **************6875 - SUCCESS
+2026-07-24 23:32:43 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233235 - CREATE - Booking -  - FAILED
+2026-07-24 23:32:44 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233235 - CREATE - Booking -  - FAILED
+2026-07-24 23:32:47 [http-nio-8080-exec-6] ERROR c.e.r.e.GlobalExceptionHandler - Unhandled exception
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource payments/booking.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:145)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.resort.filter.RateLimitFilter.doFilterInternal(RateLimitFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-07-24 23:32:47 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233235 - CREATE - PaymentGroup -  - FAILED
+2026-07-24 23:32:51 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Refresh token rotated for user codexu0724233235
+2026-07-24 23:34:33 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-24 23:34:33 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 11424 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-24 23:34:33 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-24 23:34:33 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-24 23:34:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-24 23:34:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 10 JPA repository interfaces.
+2026-07-24 23:34:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-24 23:34:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:34:34 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-24 23:34:34 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-24 23:34:34 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-24 23:34:34 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1832 ms
+2026-07-24 23:34:35 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-24 23:34:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-24 23:34:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32caae19
+2026-07-24 23:34:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-24 23:34:35 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-24 23:34:35 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 15
+2026-07-24 23:34:35 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-24 23:34:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-24 23:34:35 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-24 23:34:35 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-24 23:34:36 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-24 23:34:37 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-24 23:34:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:34:37 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-24 23:34:40 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:34:40 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-24 23:34:40 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 7.766 seconds (process running for 8.117)
+2026-07-24 23:36:17 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-24 23:36:17 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-24 23:36:17 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-07-24 23:36:17 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-24 23:36:17 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-24 23:36:18 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:36:18 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - anonymousUser - CREATE - User - 5c1e0ec8-dd47-44a8-be36-26e19348dfe0 - SUCCESS
+2026-07-24 23:36:19 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexu0724233617
+2026-07-24 23:36:19 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - User found: codexu0724233617, checking password...
+2026-07-24 23:36:19 [http-nio-8080-exec-4] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:36:19 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - admin - CREATE - User - f4b8aeb5-9fda-4659-b312-4191660594cb - SUCCESS
+2026-07-24 23:36:20 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - admin - CREATE - User - b97fff7e-4e18-4c9a-8f44-fc4916fea10d - SUCCESS
+2026-07-24 23:36:20 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexs0724233617
+2026-07-24 23:36:20 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - User found: codexs0724233617, checking password...
+2026-07-24 23:36:20 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:36:21 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexh0724233617
+2026-07-24 23:36:21 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - User found: codexh0724233617, checking password...
+2026-07-24 23:36:21 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:36:23 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724233617 - CREATE - Room - 864 - SUCCESS
+2026-07-24 23:36:23 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724233617 - UPDATE - Room - 864 - SUCCESS
+2026-07-24 23:36:25 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233617 - CREATE - Customer - ********************8423 - SUCCESS
+2026-07-24 23:36:25 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233617 - UPDATE - Customer - ********************8423 - SUCCESS
+2026-07-24 23:36:26 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233617 - CREATE - Booking -  - FAILED
+2026-07-24 23:36:26 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233617 - CREATE - Booking -  - FAILED
+2026-07-24 23:36:27 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233617 - CREATE - Booking -  - FAILED
+2026-07-24 23:36:30 [http-nio-8080-exec-5] ERROR c.e.r.e.GlobalExceptionHandler - Unhandled exception
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource payments/booking.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter.doFilterInternal(BearerTokenAuthenticationFilter.java:145)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.example.resort.filter.RateLimitFilter.doFilterInternal(RateLimitFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-07-24 23:36:30 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724233617 - CREATE - PaymentGroup -  - FAILED
+2026-07-24 23:36:33 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - Refresh token rotated for user codexu0724233617
+2026-07-24 23:37:16 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-24 23:37:16 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-24 23:37:16 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:37:16 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - admin - CREATE - Booking -  - FAILED
+2026-07-24 23:38:27 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-24 23:38:27 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 12192 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-24 23:38:27 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-24 23:38:27 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-24 23:38:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-24 23:38:28 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 10 JPA repository interfaces.
+2026-07-24 23:38:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-24 23:38:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:38:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-24 23:38:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-24 23:38:29 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-24 23:38:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1785 ms
+2026-07-24 23:38:29 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-24 23:38:29 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-24 23:38:30 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74e4be21
+2026-07-24 23:38:30 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-24 23:38:30 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-24 23:38:30 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 15
+2026-07-24 23:38:30 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-24 23:38:30 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-24 23:38:30 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-24 23:38:30 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-24 23:38:30 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-24 23:38:31 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-24 23:38:31 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:38:32 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-24 23:38:34 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:38:34 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-24 23:38:34 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 7.629 seconds (process running for 7.961)
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - Login attempt for username: admin
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - User found: admin, checking password...
+2026-07-24 23:40:00 [http-nio-8080-exec-7] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:40:01 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - anonymousUser - CREATE - User - d4125de1-d3e1-44fe-a2ec-924bf6540bf7 - SUCCESS
+2026-07-24 23:40:01 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexu0724234000
+2026-07-24 23:40:01 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - User found: codexu0724234000, checking password...
+2026-07-24 23:40:01 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:40:02 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - admin - CREATE - User - 3b638dcb-e077-4917-87e0-da70e6025987 - SUCCESS
+2026-07-24 23:40:02 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - admin - CREATE - User - 1cacf6c3-251e-4950-9850-ee56e55e7a18 - SUCCESS
+2026-07-24 23:40:03 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexs0724234000
+2026-07-24 23:40:03 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - User found: codexs0724234000, checking password...
+2026-07-24 23:40:03 [http-nio-8080-exec-9] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:40:03 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Login attempt for username: codexh0724234000
+2026-07-24 23:40:03 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - User found: codexh0724234000, checking password...
+2026-07-24 23:40:03 [http-nio-8080-exec-2] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:40:05 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724234000 - CREATE - Room - 739 - SUCCESS
+2026-07-24 23:40:06 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724234000 - UPDATE - Room - 739 - SUCCESS
+2026-07-24 23:40:07 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - Customer - 3db726c5-4910-4d5a-9a64-ba84ababda02 - SUCCESS
+2026-07-24 23:40:08 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - UPDATE - Customer - 3db726c5-4910-4d5a-9a64-ba84ababda02 - SUCCESS
+2026-07-24 23:40:08 [http-nio-8080-exec-3] INFO  o.s.s.a.AnnotationAsyncExecutionInterceptor - More than one TaskExecutor bean found within the context, and none is named 'taskExecutor'. Mark one of them as primary or name it 'taskExecutor' (possibly as an alias) in order to use it for async processing: [auditLogExecutor, taskScheduler]
+2026-07-24 23:40:08 [http-nio-8080-exec-3] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CREATED, aggregate=Booking, aggregateId=7, username=codexu0724234000, source=BookingService.createBooking
+2026-07-24 23:40:08 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - Booking - 7 - SUCCESS
+2026-07-24 23:40:08 [SimpleAsyncTaskExecutor-1] INFO  c.e.resort.service.EmailService - Sending booking created email for booking: 7
+2026-07-24 23:40:09 [http-nio-8080-exec-4] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CREATED, aggregate=Booking, aggregateId=8, username=codexu0724234000, source=BookingService.createBooking
+2026-07-24 23:40:09 [SimpleAsyncTaskExecutor-2] INFO  c.e.resort.service.EmailService - Sending booking created email for booking: 8
+2026-07-24 23:40:09 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - Booking - 8 - SUCCESS
+2026-07-24 23:40:09 [http-nio-8080-exec-6] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CREATED, aggregate=Booking, aggregateId=9, username=codexu0724234000, source=BookingService.createBooking
+2026-07-24 23:40:09 [SimpleAsyncTaskExecutor-3] INFO  c.e.resort.service.EmailService - Sending booking created email for booking: 9
+2026-07-24 23:40:09 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - Booking - 9 - SUCCESS
+2026-07-24 23:40:10 [http-nio-8080-exec-2] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CANCELLED, aggregate=Booking, aggregateId=8, username=codexu0724234000, source=BookingService.cancelBooking
+2026-07-24 23:40:10 [SimpleAsyncTaskExecutor-4] INFO  c.e.resort.service.EmailService - Sending booking canceled email for booking: 8
+2026-07-24 23:40:10 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CANCEL - Booking - 8 - SUCCESS
+2026-07-24 23:40:11 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - Payment - a0ba146a-a5a2-4cfd-b52d-c7068628c16b - SUCCESS
+2026-07-24 23:40:11 [http-nio-8080-exec-7] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=PAYMENT_CREATED, aggregate=Payment, aggregateId=a0ba146a-a5a2-4cfd-b52d-c7068628c16b, username=codexu0724234000, source=PaymentService.createPayment
+2026-07-24 23:40:12 [http-nio-8080-exec-3] INFO  c.e.resort.service.PaymentService - Cash payment confirmed for booking: 7
+2026-07-24 23:40:12 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724234000 - CONFIRM_CASH - Payment - a0ba146a-a5a2-4cfd-b52d-c7068628c16b - SUCCESS
+2026-07-24 23:40:12 [http-nio-8080-exec-3] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=PAYMENT_PAID, aggregate=Payment, aggregateId=a0ba146a-a5a2-4cfd-b52d-c7068628c16b, username=codexs0724234000, source=PaymentService.confirmCashPayment
+2026-07-24 23:40:12 [SimpleAsyncTaskExecutor-6] INFO  c.e.resort.service.EmailService - Sending payment paid email for payment: a0ba146a-a5a2-4cfd-b52d-c7068628c16b
+2026-07-24 23:40:13 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexu0724234000 - CREATE - PaymentGroup - 8ab38320-a44a-44a3-8852-7a547a6948fe - SUCCESS
+2026-07-24 23:40:13 [http-nio-8080-exec-8] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=PAYMENT_CHECKOUT_CREATED, aggregate=PaymentGroup, aggregateId=8ab38320-a44a-44a3-8852-7a547a6948fe, username=codexu0724234000, source=PaymentService.createCheckout
+2026-07-24 23:40:13 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724234000 - CHECK_IN - Booking - 7 - SUCCESS
+2026-07-24 23:40:13 [http-nio-8080-exec-9] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CHECKED_IN, aggregate=Booking, aggregateId=7, username=codexs0724234000, source=BookingService.checkIn
+2026-07-24 23:40:13 [SimpleAsyncTaskExecutor-8] INFO  c.e.resort.service.EmailService - Sending check-in email for booking: 7
+2026-07-24 23:40:14 [Audit-Log2] DEBUG c.e.resort.service.AuditLogService - Audit - codexs0724234000 - CHECK_OUT - Booking - 7 - SUCCESS
+2026-07-24 23:40:14 [http-nio-8080-exec-2] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=BOOKING_CHECKED_OUT, aggregate=Booking, aggregateId=7, username=codexs0724234000, source=BookingService.checkOut
+2026-07-24 23:40:14 [SimpleAsyncTaskExecutor-9] INFO  c.e.resort.service.EmailService - Sending check-out email for booking: 7
+2026-07-24 23:40:16 [http-nio-8080-exec-4] INFO  c.e.resort.service.PaymentService - Payment refunded: a0ba146a-a5a2-4cfd-b52d-c7068628c16b
+2026-07-24 23:40:16 [http-nio-8080-exec-4] INFO  c.e.r.aop.event.DomainEventListener - Domain event published - type=PAYMENT_REFUNDED, aggregate=Payment, aggregateId=a0ba146a-a5a2-4cfd-b52d-c7068628c16b, username=admin, source=PaymentService.refundPayment
+2026-07-24 23:40:16 [Audit-Log1] DEBUG c.e.resort.service.AuditLogService - Audit - admin - REFUND - Payment - a0ba146a-a5a2-4cfd-b52d-c7068628c16b - SUCCESS
+2026-07-24 23:40:16 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - Refresh token rotated for user codexu0724234000
+2026-07-24 23:44:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-24 23:44:44 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 6728 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-24 23:44:44 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-24 23:44:44 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-24 23:44:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-24 23:44:44 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 10 JPA repository interfaces.
+2026-07-24 23:44:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-24 23:44:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:44:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-24 23:44:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-24 23:44:45 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-24 23:44:45 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1780 ms
+2026-07-24 23:44:45 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-24 23:44:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-24 23:44:46 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32069394
+2026-07-24 23:44:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-24 23:44:46 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-24 23:44:46 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 15
+2026-07-24 23:44:46 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-24 23:44:46 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-24 23:44:46 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-24 23:44:46 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-24 23:44:47 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-24 23:44:48 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-24 23:44:48 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:44:48 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-24 23:44:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:44:51 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-07-24 23:44:51 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:44:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-07-24 23:44:51 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-07-24 23:44:51 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-24 23:44:51 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-07-24 23:48:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2026-07-24 23:48:06 [main] INFO  c.example.resort.ResortApplication - Starting ResortApplication using Java 21.0.10 with PID 2068 (D:\BaoCao\resort\resort\target\classes started by Dang Van in D:\BaoCao\resort\resort)
+2026-07-24 23:48:06 [main] DEBUG c.example.resort.ResortApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-07-24 23:48:06 [main] INFO  c.example.resort.ResortApplication - No active profile set, falling back to 1 default profile: "default"
+2026-07-24 23:48:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-24 23:48:07 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 10 JPA repository interfaces.
+2026-07-24 23:48:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-07-24 23:48:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:48:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-07-24 23:48:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-07-24 23:48:08 [main] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring embedded WebApplicationContext
+2026-07-24 23:48:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1863 ms
+2026-07-24 23:48:08 [main] DEBUG c.e.resort.filter.RateLimitFilter - Filter 'rateLimitFilter' configured for use
+2026-07-24 23:48:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-07-24 23:48:08 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@729d6ee2
+2026-07-24 23:48:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-07-24 23:48:08 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:mysql://localhost:3306/resort (MySQL 8.0)
+2026-07-24 23:48:08 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema `resort`: 15
+2026-07-24 23:48:08 [main] INFO  o.f.core.internal.command.DbMigrate - Schema `resort` is up to date. No migration necessary.
+2026-07-24 23:48:09 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-07-24 23:48:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-07-24 23:48:09 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-07-24 23:48:09 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-24 23:48:10 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-24 23:48:10 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-24 23:48:10 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-24 23:48:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-07-24 23:48:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/resort'
+2026-07-24 23:48:13 [main] INFO  c.example.resort.ResortApplication - Started ResortApplication in 7.585 seconds (process running for 8.378)
+2026-07-24 23:48:37 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[localhost].[/resort] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-24 23:48:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-07-24 23:48:37 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-07-24 23:48:37 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan01
+2026-07-24 23:48:37 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - User found: dinhvan01, checking password...
+2026-07-24 23:48:37 [http-nio-8080-exec-6] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:49:14 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvannn
+2026-07-24 23:49:14 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - User found: dinhvannn, checking password...
+2026-07-24 23:49:14 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:49:51 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvan01
+2026-07-24 23:49:51 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - User found: dinhvan01, checking password...
+2026-07-24 23:49:51 [http-nio-8080-exec-3] INFO  c.e.r.service.AuthenticationService - Password match result: true
+2026-07-24 23:50:40 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Login attempt for username: dinhvannn
+2026-07-24 23:50:40 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - User found: dinhvannn, checking password...
+2026-07-24 23:50:40 [http-nio-8080-exec-8] INFO  c.e.r.service.AuthenticationService - Password match result: true

@@ -4,6 +4,8 @@ import com.example.resort.enums.rooms.RoomStatus;
 import com.example.resort.enums.rooms.RoomType;
 import lombok.*;
 
+import java.util.List;
+
 @Getter
 @Setter
 @Builder
@@ -16,5 +18,6 @@ public class RoomResponse {
     private RoomStatus status;
     private Double pricePerNight;
     private String imageUrl;
+    private List<String> imageUrls;
     private Integer floor;
 }

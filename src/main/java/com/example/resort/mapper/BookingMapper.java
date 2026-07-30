@@ -11,7 +11,12 @@ public interface BookingMapper {
     @Mapping(source = "customer.fullName",   target = "fullName")
     @Mapping(source = "room.roomId",          target = "roomId")
     @Mapping(source = "room.roomNumber",      target = "roomNumber")
+    @Mapping(source = "roomType",             target = "roomType")
     @Mapping(source = "checkedInDate",        target = "checkedInDate")
+    @Mapping(source = "checkedInTime",        target = "checkedInTime")
     @Mapping(source = "checkedOutDate",       target = "checkedOutDate")
+    @Mapping(source = "checkedOutTime",       target = "checkedOutTime")
+    @Mapping(target = "paymentStatus", ignore = true)
+    @Mapping(target = "paymentExpiredAt", ignore = true)
     BookingResponse toBookingResponse(Booking Booking);
 }

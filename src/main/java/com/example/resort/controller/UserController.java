@@ -1,7 +1,9 @@
 package com.example.resort.controller;
 
 import com.example.resort.dto.request.UserCreateRequest;
+import com.example.resort.dto.request.UserPasswordChangeRequest;
 import com.example.resort.dto.request.UserRoleUpdateRequest;
+import com.example.resort.dto.request.UserSelfUpdateRequest;
 import com.example.resort.dto.request.UserUpdateRequest;
 import com.example.resort.dto.response.ApiResponse;
 import com.example.resort.dto.response.UserResponse;
@@ -63,6 +65,20 @@ public class UserController {
     public ApiResponse<List<UserResponse>> getAllUsers() {
         return ApiResponse.<List<UserResponse>>builder()
                 .result(userService.getAllUsers())
+                .build();
+    }
+
+    @PutMapping("/me")
+    public ApiResponse<UserResponse> updateMyInfo(@Valid @RequestBody UserSelfUpdateRequest request) {
+        return ApiResponse.<UserResponse>builder()
+                .result(userService.updateMyInfo(request))
+                .build();
+    }
+
+    @PutMapping("/me/password")
+    public ApiResponse<UserResponse> changeMyPassword(@Valid @RequestBody UserPasswordChangeRequest request) {
+        return ApiResponse.<UserResponse>builder()
+                .result(userService.changeMyPassword(request))
                 .build();
     }
 

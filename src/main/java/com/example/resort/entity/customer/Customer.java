@@ -6,6 +6,8 @@ import lombok.*;
 import com.example.resort.entity.BaseEntity;
 import com.example.resort.entity.User;
 import lombok.experimental.SuperBuilder;
+
+import java.time.LocalDate;
 @Entity
 @Table(name = "customers")
 @Getter
@@ -27,6 +29,9 @@ public class Customer extends BaseEntity {
     private String email;
     @Column(name = "identityNumber", nullable = false, unique = true)
     private String identityNumber;
+
+    @Column(name = "dateOfBirth")
+    private LocalDate dateOfBirth;
 
     @Column(name = "address")
     private String address;

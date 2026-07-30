@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2026-07-07T14:27:44+0700",
+    date = "2026-07-29T16:51:52+0700",
     comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.10 (Oracle Corporation)"
 )
 @Component
@@ -28,6 +28,7 @@ public class CustomerMapperImpl implements CustomerMapper {
         customer.phoneNumber( request.getPhoneNumber() );
         customer.email( request.getEmail() );
         customer.identityNumber( request.getIdentityNumber() );
+        customer.dateOfBirth( request.getDateOfBirth() );
 
         return customer.build();
     }
@@ -50,6 +51,9 @@ public class CustomerMapperImpl implements CustomerMapper {
         if ( request.getIdentityNumber() != null ) {
             customer.setIdentityNumber( request.getIdentityNumber() );
         }
+        if ( request.getDateOfBirth() != null ) {
+            customer.setDateOfBirth( request.getDateOfBirth() );
+        }
     }
 
     @Override
@@ -66,7 +70,10 @@ public class CustomerMapperImpl implements CustomerMapper {
         customerResponse.phoneNumber( customer.getPhoneNumber() );
         customerResponse.email( customer.getEmail() );
         customerResponse.identityNumber( customer.getIdentityNumber() );
+        customerResponse.dateOfBirth( customer.getDateOfBirth() );
         customerResponse.createdAt( customer.getCreatedAt() );
+
+        customerResponse.identityMasked( maskIdentity(customer) );
 
         return customerResponse.build();
     }

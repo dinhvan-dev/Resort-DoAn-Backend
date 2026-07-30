@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2026-07-07T14:27:44+0700",
+    date = "2026-07-29T16:51:52+0700",
     comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.10 (Oracle Corporation)"
 )
 @Component
@@ -27,12 +27,26 @@ public class BookingMapperImpl implements BookingMapper {
         bookingResponse.fullName( bookingCustomerFullName( Booking ) );
         bookingResponse.roomId( bookingRoomRoomId( Booking ) );
         bookingResponse.roomNumber( bookingRoomRoomNumber( Booking ) );
+        if ( Booking.getRoomType() != null ) {
+            bookingResponse.roomType( Booking.getRoomType().name() );
+        }
         bookingResponse.checkedInDate( Booking.getCheckedInDate() );
+        bookingResponse.checkedInTime( Booking.getCheckedInTime() );
         bookingResponse.checkedOutDate( Booking.getCheckedOutDate() );
+        bookingResponse.checkedOutTime( Booking.getCheckedOutTime() );
         bookingResponse.bookingId( Booking.getBookingId() );
+        bookingResponse.quantity( Booking.getQuantity() );
+        bookingResponse.numberOfGuests( Booking.getNumberOfGuests() );
         if ( Booking.getStatus() != null ) {
             bookingResponse.status( Booking.getStatus().name() );
         }
+        bookingResponse.pricePerNight( Booking.getPricePerNight() );
+        bookingResponse.numberOfNights( Booking.getNumberOfNights() );
+        bookingResponse.subtotal( Booking.getSubtotal() );
+        bookingResponse.taxAmount( Booking.getTaxAmount() );
+        bookingResponse.serviceFee( Booking.getServiceFee() );
+        bookingResponse.discountAmount( Booking.getDiscountAmount() );
+        bookingResponse.totalAmount( Booking.getTotalAmount() );
         bookingResponse.totalPrice( Booking.getTotalPrice() );
         bookingResponse.createdAt( Booking.getCreatedAt() );
 

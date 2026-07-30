@@ -15,6 +15,7 @@ public enum ErrorCode {
     INVALID_ROOM_NUMBER(1006, "Room number must contain floor followed by two room digits", HttpStatus.BAD_REQUEST),
     ROOM_UNDER_MAINTENANCE(1007, "Room is under maintenance", HttpStatus.CONFLICT),
     ROOM_NOT_AVAILABLE(1008, "Room is not ready for booking", HttpStatus.CONFLICT),
+    INVALID_ROOM_IMAGES(1009, "Room images must be image files, contain between 3 and 5 images, and be no larger than 10MB each", HttpStatus.BAD_REQUEST),
 
     // Customer errors
     CUSTOMER_NOT_FOUND(2001, "Customer not found", HttpStatus.NOT_FOUND),
@@ -41,6 +42,7 @@ public enum ErrorCode {
     USER_EMAIL_EXISTS(5006, "Email already exists", HttpStatus.CONFLICT),
     INVALID_USER_ROLE(5007, "Only USER, STAFF or HOUSEKEEPING roles can be assigned through this API", HttpStatus.BAD_REQUEST),
     USER_PHONE_EXISTS(5008, "Phone number already exists", HttpStatus.CONFLICT),
+    INVALID_CURRENT_PASSWORD(5009, "Current password is incorrect", HttpStatus.BAD_REQUEST),
 
     // Validation
     INVALID_REQUEST(4000, "Invalid request", HttpStatus.BAD_REQUEST),
@@ -58,6 +60,7 @@ public enum ErrorCode {
     PAYMENT_INVALID_SIGNATURE(7004, "Invalid payment signature", HttpStatus.BAD_REQUEST),
     PAYMENT_INVALID_METHOD(7005, "Invalid payment method for this operation", HttpStatus.BAD_REQUEST),
     INVALID_PAYMENT_METHOD(7007, "This operation is not allowed for this payment method", HttpStatus.BAD_REQUEST),
+    PAYMENT_CANNOT_REFUND(7008, "Only paid payments can be refunded", HttpStatus.CONFLICT),
 
     // cleaning task
     CLEANING_TASK_NOT_FOUND(8001, "Cleaning task not found", HttpStatus.NOT_FOUND),

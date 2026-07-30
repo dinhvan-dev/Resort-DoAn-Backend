@@ -1,5 +1,6 @@
 package com.example.resort.service;
 
+import com.example.resort.aop.logging.Auditable;
 import com.example.resort.dto.request.customer.CustomerCreateRequest;
 import com.example.resort.dto.request.customer.CustomerUpdateRequest;
 import com.example.resort.dto.response.PageResponse;
@@ -33,6 +34,12 @@ public class CustomerService {
 
     @CacheEvict(value = {"customers", "customer"}, allEntries = true)
     @Transactional
+    @Auditable(
+            action = "CREATE",
+            entity = "Customer",
+            entityId = "#result.customerId",
+            detail = "'Created customer profile ' + #result.customerId"
+    )
     public CustomerResponse createCustomer(CustomerCreateRequest request)
     {
         if (hasRole("ROLE_USER")) {
@@ -48,7 +55,7 @@ public class CustomerService {
         );
 
         Customer customer = customerMapper.toCustomer(request);
-        return customerMapper.toCustomerResponse(customerRepository.save(customer));
+        return toMaskedResponse(customerRepository.save(customer));
     }
 
     @Cacheable(value = "customers", key = "#page + '-' + #size")
@@ -60,7 +67,7 @@ public class CustomerService {
 
         List<CustomerResponse> data = customerPage.getContent()
                 .stream()
-                .map(customerMapper::toCustomerResponse)
+                .map(this::toMaskedResponse)
                 .toList();
 
         return PageResponse.<CustomerResponse> builder()
@@ -81,7 +88,7 @@ public class CustomerService {
     {
         Customer customer = customerRepository.findActiveByCustomerId(customerId)
                 .orElseThrow(() -> new AppException(ErrorCode.CUSTOMER_NOT_FOUND));
-        return customerMapper.toCustomerResponse(customer);
+        return toMaskedResponse(customer);
     }
 
     @Transactional(readOnly = true)
@@ -89,11 +96,17 @@ public class CustomerService {
     {
         Customer customer = customerRepository.findActiveByUsername(currentUsername())
                 .orElseThrow(() -> new AppException(ErrorCode.CUSTOMER_NOT_FOUND));
-        return customerMapper.toCustomerResponse(customer);
+        return toOwnerResponse(customer);
     }
 
     @CacheEvict(value = {"customers", "customer"}, allEntries = true)
     @Transactional
+    @Auditable(
+            action = "DELETE",
+            entity = "Customer",
+            entityId = "#p0",
+            detail = "'Deleted customer ' + #p0"
+    )
     public void deleteCustomer(String customerId)
     {
         Customer customer = customerRepository.findActiveByCustomerId(customerId)
@@ -104,6 +117,12 @@ public class CustomerService {
 
     @CacheEvict(value = {"customers", "customer"}, allEntries = true)
     @Transactional
+    @Auditable(
+            action = "UPDATE",
+            entity = "Customer",
+            entityId = "#result.customerId",
+            detail = "'Updated customer ' + #result.customerId"
+    )
     public CustomerResponse updateCustomer(String customerId, CustomerUpdateRequest request)
     {
         Customer customer = customerRepository.findActiveByCustomerId(customerId)
@@ -116,11 +135,17 @@ public class CustomerService {
                 customerId
         );
         customerMapper.updateCustomer(customer, request);
-        return customerMapper.toCustomerResponse(customerRepository.save(customer));
+        return toMaskedResponse(customerRepository.save(customer));
     }
 
     @CacheEvict(value = {"customers", "customer"}, allEntries = true)
     @Transactional
+    @Auditable(
+            action = "UPDATE",
+            entity = "Customer",
+            entityId = "#result.customerId",
+            detail = "'Updated current customer profile ' + #result.customerId"
+    )
     public CustomerResponse updateMyProfile(CustomerUpdateRequest request)
     {
         Customer customer = customerRepository.findActiveByUsername(currentUsername())
@@ -129,15 +154,17 @@ public class CustomerService {
 
         validateCustomerProfileUpdateRequest(request);
         validateCustomerUniqueness(
-                null,
-                null,
+                request.getEmail(),
+                request.getPhoneNumber(),
                 request.getIdentityNumber(),
                 customer.getCustomerId()
         );
+        validateUserUniqueness(request.getEmail(), request.getPhoneNumber(), user.getUserId());
 
         customerMapper.updateCustomer(customer, request);
-        syncCustomerFromUser(customer, user);
-        return customerMapper.toCustomerResponse(customerRepository.save(customer));
+        syncUserFromCustomer(user, customer);
+        userRepository.save(user);
+        return toOwnerResponse(customerRepository.save(customer));
     }
 
     private CustomerResponse createCustomerProfileForCurrentUser(CustomerCreateRequest request)
@@ -148,19 +175,33 @@ public class CustomerService {
         }
 
         User user = findCurrentUser();
+        validateCustomerProfileCreateRequest(request);
+        String nextFullName = firstPresent(request.getFullName(), user.getFullName());
+        String nextPhoneNumber = firstPresent(request.getPhoneNumber(), user.getPhoneNumber());
+        String nextEmail = firstPresent(request.getEmail(), user.getEmail());
+
+        validateRequired(nextFullName);
+        validateRequired(nextPhoneNumber);
+        validateRequired(nextEmail);
         validateRequired(request.getIdentityNumber());
         validateCustomerUniqueness(
-                user.getEmail(),
-                user.getPhoneNumber(),
+                nextEmail,
+                nextPhoneNumber,
                 request.getIdentityNumber(),
                 null
         );
+        validateUserUniqueness(nextEmail, nextPhoneNumber, user.getUserId());
+
+        user.setFullName(nextFullName);
+        user.setPhoneNumber(nextPhoneNumber);
+        user.setEmail(nextEmail);
+        userRepository.save(user);
 
         Customer customer = customerMapper.toCustomer(request);
         syncCustomerFromUser(customer, user);
         customer.setUser(user);
 
-        return customerMapper.toCustomerResponse(customerRepository.save(customer));
+        return toOwnerResponse(customerRepository.save(customer));
     }
 
     private void validateWalkInCustomerRequest(CustomerCreateRequest request)
@@ -179,9 +220,29 @@ public class CustomerService {
         validateOptionalText(request.getIdentityNumber());
     }
 
+    private void validateCustomerProfileCreateRequest(CustomerCreateRequest request)
+    {
+        validateOptionalText(request.getFullName());
+        validateOptionalText(request.getPhoneNumber());
+        validateOptionalText(request.getEmail());
+    }
+
     private void validateCustomerProfileUpdateRequest(CustomerUpdateRequest request)
     {
+        validateOptionalText(request.getFullName());
+        validateOptionalText(request.getPhoneNumber());
+        validateOptionalText(request.getEmail());
         validateOptionalText(request.getIdentityNumber());
+    }
+
+    private void validateUserUniqueness(String email, String phoneNumber, String ignoredUserId)
+    {
+        if (email != null && userRepository.existsByEmailAndUserIdNot(email, ignoredUserId)) {
+            throw new AppException(ErrorCode.USER_EMAIL_EXISTS);
+        }
+        if (phoneNumber != null && userRepository.existsByPhoneNumberAndUserIdNot(phoneNumber, ignoredUserId)) {
+            throw new AppException(ErrorCode.USER_PHONE_EXISTS);
+        }
     }
 
     private void validateCustomerUniqueness(String email, String phoneNumber, String identityNumber, String ignoredCustomerId)
@@ -217,6 +278,25 @@ public class CustomerService {
         customer.setEmail(user.getEmail());
     }
 
+    private void syncUserFromCustomer(User user, Customer customer)
+    {
+        user.setFullName(customer.getFullName());
+        user.setPhoneNumber(customer.getPhoneNumber());
+        user.setEmail(customer.getEmail());
+    }
+
+    private CustomerResponse toOwnerResponse(Customer customer)
+    {
+        return customerMapper.toCustomerResponse(customer);
+    }
+
+    private CustomerResponse toMaskedResponse(Customer customer)
+    {
+        CustomerResponse response = customerMapper.toCustomerResponse(customer);
+        response.setIdentityNumber(null);
+        return response;
+    }
+
     private User findCurrentUser()
     {
         return userRepository.findActiveByUsername(currentUsername())
@@ -240,6 +320,11 @@ public class CustomerService {
     private boolean isBlank(String value)
     {
         return value == null || value.isBlank();
+    }
+
+    private String firstPresent(String preferred, String fallback)
+    {
+        return isBlank(preferred) ? fallback : preferred;
     }
 
     private String currentUsername()

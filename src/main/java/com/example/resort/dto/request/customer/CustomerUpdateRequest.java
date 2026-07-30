@@ -4,6 +4,8 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Pattern;
 import lombok.*;
 
+import java.time.LocalDate;
+
 @Getter
 @Setter
 @Builder
@@ -21,4 +23,6 @@ public class CustomerUpdateRequest {
 
     @Pattern(regexp = "^\\d{12}$", message = "Identity number must be exactly 12 digits")
     private String identityNumber;
+
+    private LocalDate dateOfBirth;
 }

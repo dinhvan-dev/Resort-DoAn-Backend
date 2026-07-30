@@ -30,5 +30,20 @@ public interface CustomerMapper {
     void updateCustomer(@MappingTarget Customer customer, CustomerUpdateRequest request);
 
     @Mapping(source = "user.userId", target = "userId")
+    @Mapping(target = "identityMasked", expression = "java(maskIdentity(customer))")
     CustomerResponse toCustomerResponse(Customer customer);
+
+    default String maskIdentity(Customer customer) {
+        String identityNumber = customer == null ? null : customer.getIdentityNumber();
+        if (identityNumber == null || identityNumber.isBlank()) {
+            return null;
+        }
+
+        String digits = identityNumber.replaceAll("\\D", "");
+        if (digits.length() <= 4) {
+            return "*".repeat(digits.length());
+        }
+
+        return "*".repeat(Math.max(0, digits.length() - 4)) + digits.substring(digits.length() - 4);
+    }
 }

@@ -64,7 +64,7 @@ public class CleaningTaskService {
 
     @Transactional
     public CleaningTaskResponse startTask(Long taskId) {
-        CleaningTask task = findTask(taskId);
+        CleaningTask task = findTaskForUpdate(taskId);
         if (task.getStatus() != CleaningTaskStatus.PENDING) {
             throw new AppException(ErrorCode.CLEANING_TASK_INVALID_STATUS);
         }
@@ -80,7 +80,7 @@ public class CleaningTaskService {
 
     @Transactional
     public CleaningTaskResponse completeTask(Long taskId) {
-        CleaningTask task = findTask(taskId);
+        CleaningTask task = findTaskForUpdate(taskId);
         if (task.getStatus() != CleaningTaskStatus.IN_PROGRESS) {
             throw new AppException(ErrorCode.CLEANING_TASK_INVALID_STATUS);
         }
@@ -98,7 +98,7 @@ public class CleaningTaskService {
 
     @Transactional
     public CleaningTaskResponse verifyTask(Long taskId) {
-        CleaningTask task = findTask(taskId);
+        CleaningTask task = findTaskForUpdate(taskId);
         if (task.getStatus() != CleaningTaskStatus.DONE) {
             throw new AppException(ErrorCode.CLEANING_TASK_INVALID_STATUS);
         }
@@ -113,6 +113,11 @@ public class CleaningTaskService {
 
     private CleaningTask findTask(Long taskId) {
         return cleaningTaskRepository.findActiveById(taskId)
+                .orElseThrow(() -> new AppException(ErrorCode.CLEANING_TASK_NOT_FOUND));
+    }
+
+    private CleaningTask findTaskForUpdate(Long taskId) {
+        return cleaningTaskRepository.findActiveByIdForUpdate(taskId)
                 .orElseThrow(() -> new AppException(ErrorCode.CLEANING_TASK_NOT_FOUND));
     }
 

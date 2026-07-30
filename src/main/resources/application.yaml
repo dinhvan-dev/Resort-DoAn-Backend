@@ -38,6 +38,11 @@ spring:
     validate-on-migrate: false
     repair-on-migrate: true
 
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 55MB
+
 jwt:
   signerKey: "V*J);v%b5BOsDfccqfAknb<ga!f43IIB+4L>tt}bDQqmO5N5wb8:l4VlmsMTs95*}KJI@7_3)gga8;9{;sH+k39pI9gO1rQ7YbNiomO]KMQm7mK<V{KULl9o@@ke+7(d"
 
@@ -65,10 +70,12 @@ app:
   admin:
     username: ${ADMIN_USERNAME:admin}
     password: ${ADMIN_PASSWORD:Admin1234}
+  upload:
+    room-image-dir: uploads/rooms
 
 vnpay:
   tmn-code: ${VNPAY_TMN_CODE:DEMO1234}
   hash-secret: ${VNPAY_HASH_SECRET:DEMOSECRETKEY}
   payment-url: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
-  return-url: http://localhost:8080/resort/payments/vnpay-callback
+  return-url: ${VNPAY_RETURN_URL:http://localhost:3000/app/payment-result}
   api-url: https://sandbox.vnpayment.vn/merchant_webapi/api/transaction

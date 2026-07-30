@@ -49,6 +49,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         //  Public
                         .requestMatchers(PUBLIC_ENDPOINTS).permitAll()
+                        .requestMatchers(HttpMethod.GET, "/uploads/**").permitAll()
                         .requestMatchers(HttpMethod.POST, "/users").permitAll()
 
                         //  USER
@@ -57,10 +58,12 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.GET, "/bookings/my-bookings", "/Booking/my-bookings").hasAnyRole("USER", "STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.GET, "/bookings/status", "/Booking/status").hasAnyRole("STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.GET, "/bookings/{bookingId}", "/Booking/{bookingId}").hasAnyRole("USER", "STAFF", "ADMIN")
+                        .requestMatchers(HttpMethod.PATCH, "/bookings/*/cancel", "/Booking/*/cancel").hasAnyRole("USER", "STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.POST, "/customers", "/Customer").hasAnyRole("USER", "STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.GET, "/customers/my-profile", "/Customer/my-profile").hasAnyRole("USER", "STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.PUT, "/customers/my-profile", "/Customer/my-profile").hasAnyRole("USER", "STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.GET, "/users/myinfo").hasAnyRole("USER", "STAFF", "ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/users/me", "/users/me/password").hasAnyRole("USER", "STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.GET, "/users/role").hasAnyRole("STAFF", "ADMIN")
 
                         //  STAFF
@@ -71,6 +74,7 @@ public class SecurityConfig {
                         .requestMatchers("/customers", "/Customer").hasAnyRole("STAFF", "ADMIN")
                         .requestMatchers("/customers/**", "/Customer/**").hasAnyRole("STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.POST, "/rooms").hasAnyRole("STAFF", "ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/rooms/images").hasAnyRole("STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.PUT, "/rooms/**").hasAnyRole("STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.DELETE, "/rooms/**").hasAnyRole("STAFF", "ADMIN")
 
@@ -80,14 +84,20 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.PATCH, "/cleaning-tasks/*/complete").hasAnyRole("HOUSEKEEPING", "STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.GET, "/cleaning-tasks").hasAnyRole("STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.PATCH, "/cleaning-tasks/*/verify").hasAnyRole("STAFF", "ADMIN")
+                        .requestMatchers("/staff/reports/**").hasAnyRole("STAFF", "ADMIN")
 
                         // Payment endpoints
                         .requestMatchers(HttpMethod.POST, "/payments").hasAnyRole("USER", "STAFF", "ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/payments/checkout").hasAnyRole("USER", "STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.GET, "/payments/booking/**").hasAnyRole("USER", "STAFF", "ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/payments/staff").hasAnyRole("STAFF", "ADMIN")
+                        .requestMatchers(HttpMethod.GET, "/payments/cash-pending").hasAnyRole("STAFF", "ADMIN")
                         .requestMatchers(HttpMethod.PATCH, "/payments/*/confirm-cash").hasAnyRole("STAFF", "ADMIN")
+                        .requestMatchers(HttpMethod.PATCH, "/payments/*/refund").hasRole("ADMIN")
                         .requestMatchers(HttpMethod.GET, "/payments/vnpay-callback").permitAll() // VNPay gọi vào
 
                         //  ADMIN
+                        .requestMatchers("/admin/reports/**").hasRole("ADMIN")
                         .requestMatchers("/users/**").hasRole("ADMIN")
 
                         .requestMatchers("/audit-log/**").hasRole("ADMIN")
@@ -109,7 +119,7 @@ public class SecurityConfig {
     {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(List.of("http://localhost:3000"));
+        config.setAllowedOrigins(List.of("http://localhost:3000", "http://127.0.0.1:3000"));
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE","PATCH", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
 

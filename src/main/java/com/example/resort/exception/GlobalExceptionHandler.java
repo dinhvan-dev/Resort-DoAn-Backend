@@ -5,11 +5,13 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.security.authorization.AuthorizationDeniedException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.multipart.MaxUploadSizeExceededException;
 
 import java.nio.file.AccessDeniedException;
 import java.util.Objects;
@@ -22,12 +24,42 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(value = Exception.class)
     public ResponseEntity<ApiResponse> handlingException(Exception exception)
     {
+        log.error("Unhandled exception", exception);
         ApiResponse<Void> response = ApiResponse.<Void> builder()
                 .code(ErrorCode.INTERNAL_SERVER_ERROR.getCode())
                 .message(ErrorCode.INTERNAL_SERVER_ERROR.getMessage())
                 .build();
 
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(response);
+    }
+
+    @ExceptionHandler(value = MaxUploadSizeExceededException.class)
+    public ResponseEntity<ApiResponse<Void>> handlingMaxUploadSizeExceeded(MaxUploadSizeExceededException exception)
+    {
+        log.warn("Room image upload exceeded limit: {}", exception.getMessage());
+        ErrorCode errorCode = ErrorCode.INVALID_ROOM_IMAGES;
+        ApiResponse<Void> apiResponse = ApiResponse.<Void> builder()
+                .code(errorCode.getCode())
+                .message(errorCode.getMessage())
+                .build();
+
+        return ResponseEntity.status(errorCode.getStatusCode()).body(apiResponse);
+    }
+
+    @ExceptionHandler(value = HttpMessageNotReadableException.class)
+    public ResponseEntity<ApiResponse<Void>> handlingHttpMessageNotReadable(HttpMessageNotReadableException exception)
+    {
+        String message = exception.getMostSpecificCause().getMessage();
+        ErrorCode errorCode = message != null && message.contains("RoomType")
+                ? ErrorCode.INVALID_ROOM_TYPE
+                : ErrorCode.INVALID_REQUEST;
+
+        ApiResponse<Void> apiResponse = ApiResponse.<Void> builder()
+                .code(errorCode.getCode())
+                .message(errorCode.getMessage())
+                .build();
+
+        return ResponseEntity.status(errorCode.getStatusCode()).body(apiResponse);
     }
 
     @ExceptionHandler(value = AppException.class)

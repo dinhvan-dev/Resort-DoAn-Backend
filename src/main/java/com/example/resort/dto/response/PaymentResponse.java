@@ -20,5 +20,6 @@ public class PaymentResponse {
     private String paymentUrl;
     private String vnpayTransactionId;
     private LocalDateTime createdAt;
+    private LocalDateTime paymentExpiredAt;
     private LocalDateTime paidAt;
 }

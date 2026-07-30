@@ -28,6 +28,10 @@ public class Payment extends BaseEntity {
     @JoinColumn(name = "booking_id", nullable = false, unique = true)
     private Booking booking;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "payment_group_id")
+    private PaymentGroup paymentGroup;
+
     @Column(name = "payment_method", nullable = false)
     @Enumerated(EnumType.STRING)
     private PaymentMethod paymentMethod;
@@ -47,4 +51,7 @@ public class Payment extends BaseEntity {
 
     @Column(name = "paid_at")
     private LocalDateTime paidAt;
+
+    @Column(name = "payment_expired_at")
+    private LocalDateTime paymentExpiredAt;
 }

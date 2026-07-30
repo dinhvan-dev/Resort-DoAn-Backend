@@ -33,4 +33,7 @@ public interface CustomerRepository extends JpaRepository<Customer, String> {
 
         @Query("SELECT COUNT(c) > 0 FROM Customer c WHERE c.user.username = :username AND c.isActive = true")
         boolean existsActiveByUsername(@Param("username") String username);
+
+        @Query("SELECT COUNT(c) FROM Customer c WHERE c.isActive = true")
+        long countActiveCustomers();
 }
